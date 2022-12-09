@@ -4,7 +4,7 @@ This repo covers Kubeflow Environment with LABs: Kubeflow, Pipeline, Experiments
 **Keywords:** Kubeflow, ML Pipeline.
 
 # Quick Look (HowTo): Scenarios - Hands-on LABs
-- [LAB: Creating LAB Environment (WSL2), Installing Kubeflow]()
+- [LAB: Creating LAB Environment (WSL2), Installing Kubeflow](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md)
 - [LAB: Kubeflow: Decision Tree, Logistic Regression Example]()
 
 # Table of Contents
@@ -34,12 +34,16 @@ Why should we use / learn Kubeflow?
 
 ## What is Kubernetes? <a name="whatisKubeflow"></a>
 
+- To learn about Kubernetes: https://github.com/omerbsezer/Fast-Kubernetes 
 
 ## What are Containers (Docker)? <a name="#whatareContainers"></a>
 
 
+- To learn about Docker and Containers: https://github.com/omerbsezer/Fast-Docker
+
 ## Creating LAB Environment (WSL2), Installing Kubeflow <a name="labEnvironment"></a>
 
+- [LAB: Creating LAB Environment (WSL2), Installing Kubeflow](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md) 
 
 ## Kubeflow Basics <a name="basics"></a>
 
@@ -49,6 +53,7 @@ Why should we use / learn Kubeflow?
 
 ## Minio (Object Storage) <a name="minio"></a>
 
+- [LAB: Creating LAB Environment (WSL2), Installing Kubeflow](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md) 
 
 ## Other Useful Resources Related Kubeflow <a name="resource"></a>
 
