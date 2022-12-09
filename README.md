@@ -1,6 +1,8 @@
 # Fast-Kubeflow
 This repo covers Kubeflow Environment with LABs: Kubeflow, Pipeline, Experiments, Run, Minio, etc. Possible usage scenarios are aimed to update over time.
 
+Kubeflow supposes Machine Learning (ML) Pipeline that runs on Kubernetes (K8s) Cluster. Kubeflow uses the power of the K8s (Clusters and Autoscaling). Each step of the process in the ML Pipeline is container. Hence, each step can be isolated, run parallel (if they are not in sequence). 
+
 ## Prerequisite
 - Have a knowledge of 
   - Container Technology (Docker). You can learn it from here => [Fast-Docker](https://github.com/omerbsezer/Fast-Docker)
