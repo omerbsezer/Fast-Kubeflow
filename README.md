@@ -1,7 +1,12 @@
 # Fast-Kubeflow
 This repo covers Kubeflow Environment with LABs: Kubeflow, Pipeline, Experiments, Run, Minio, etc. Possible usage scenarios are aimed to update over time.
 
-**Keywords:** Kubeflow, ML Pipeline.
+## Prerequisite
+- Have a knowledge of 
+  - Container Technology (Docker). You can learn it from here => [Fast-Docker](https://github.com/omerbsezer/Fast-Docker)
+  - Container Orchestration Technology (Kubernetes). You can learn it from here => [Fast-Kubernetes](https://github.com/omerbsezer/Fast-Kubernetes)
+  
+**Keywords:** Kubeflow, ML Pipeline, MLOps, AIOps
 
 # Quick Look (HowTo): Scenarios - Hands-on LABs
 - [LAB: Creating LAB Environment (WSL2), Installing Kubeflow](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md)
