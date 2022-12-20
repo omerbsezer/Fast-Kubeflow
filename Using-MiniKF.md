@@ -52,9 +52,11 @@ kubectl -n kubeflow get pods
 
   ![image](https://user-images.githubusercontent.com/10358317/208670491-aeb9f5ae-8fd9-4e26-8e32-e45d4fdcc344.png)
 
-- Connect to the Kubeflow
+- Connect to the VM to see Kubeflow UI
 
-  ![image](https://user-images.githubusercontent.com/10358317/208674906-221c1675-e9d7-4fc9-91f6-81d0ab23c3d0.png)
+  ![image](https://user-images.githubusercontent.com/10358317/208675360-2d53f7e0-4c15-43ea-8376-81ba1db0fa6d.png)
+
+
 
 ### Troubleshooting
 
