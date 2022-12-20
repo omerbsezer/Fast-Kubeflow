@@ -52,6 +52,10 @@ kubectl -n kubeflow get pods
 
   ![image](https://user-images.githubusercontent.com/10358317/208670491-aeb9f5ae-8fd9-4e26-8e32-e45d4fdcc344.png)
 
+- Connect to the Kubeflow
+
+  ![image](https://user-images.githubusercontent.com/10358317/208674906-221c1675-e9d7-4fc9-91f6-81d0ab23c3d0.png)
+
 ### Troubleshooting
 
 #### One of the pod is not ready (34/35 remaining)
