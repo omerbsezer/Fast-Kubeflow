@@ -74,7 +74,8 @@ kubectl delete pod notebook-controller-deployment-7c46fdd957-87zfw -n kubeflow
 
 - Connect MiniKF with clicking button
 
-  ![image](https://user-images.githubusercontent.com/10358317/208671822-06a32136-046b-42a3-bf52-afd9416dfafc.png)
+  ![image](https://user-images.githubusercontent.com/10358317/208675116-a686a234-c9d1-4b38-bdef-302edf857bf6.png)
+
 
 #### Can't connect to MiniKF landing page on http://10.10.10.10 after installing MiniKF
 
