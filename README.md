@@ -12,7 +12,7 @@ Kubeflow supposes Machine Learning (ML) Pipeline that runs on Kubernetes (K8s) C
 
 # Quick Look (HowTo): Scenarios - Hands-on LABs
 - [LAB: Creating LAB Environment (WSL2), Installing Kubeflow with MicroK8s, Juju on Ubuntu 20.04](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md)
-- [LAB: Creating LAB Environment, Installing MiniKF with Vagrant]()
+- [LAB: Creating LAB Environment, Installing MiniKF with Vagrant](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Using-MiniKF.md)
 - [LAB: Kubeflow: Decision Tree, Logistic Regression Example]()
 
 # Table of Contents
@@ -64,7 +64,12 @@ Why should we use / learn Kubeflow?
 
 ## Installing Kubeflow <a name="labEnvironment"></a>
 
-- [LAB: Creating LAB Environment (WSL2), Installing Kubeflow](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md) 
+- How to install Kubeflow on WSL2 with Juju:
+  - [LAB: Creating LAB Environment (WSL2), Installing Kubeflow](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md) 
+
+- To get more features like KALE, and new in Kubeflow.
+- How to install Kubeflow on MiniKF with Vagrant and VirtualBox:
+  - [LAB: Creating LAB Environment, Installing MiniKF with Vagrant](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Using-MiniKF.md)
 
 ## Kubeflow Basics <a name="basics"></a>
 
