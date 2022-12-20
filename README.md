@@ -67,8 +67,8 @@ Why should we use / learn Kubeflow?
 - How to install Kubeflow on WSL2 with Juju:
   - [LAB: Creating LAB Environment (WSL2), Installing Kubeflow](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md) 
 
-- To get more features like KALE, and new in Kubeflow.
-- How to install Kubeflow on MiniKF with Vagrant and VirtualBox:
+- To get more features like KALE, and to install in easy way: Use Kubeflow with MiniKF
+- How to install MiniKF with Vagrant and VirtualBox:
   - [LAB: Creating LAB Environment, Installing MiniKF with Vagrant](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Using-MiniKF.md)
 
 ## Kubeflow Basics <a name="basics"></a>
