@@ -43,14 +43,30 @@ Why should we use / learn Kubeflow?
 - Kubeflow uses containers to run steps of ML algorithms on PC cluster.
 - Kubeflow supports parallel training (with Tensorflow).
 - Kubeflow provides Machine Learning (ML) data pipeline.
-- It saves pipelines, experiments, run (experiment tracking on Kubeflow).
+- It saves pipelines, experiments, and runs (experiment tracking on Kubeflow). 
+- It provides easy, repeatable, portable deployments on a diverse infrastructure (for example, experimenting on a laptop, then moving to an on-premises cluster or to the cloud).
+- Kubeflow provides deploying and managing loosely-coupled microservices and scaling based on demand.
 - Kubeflow is free, open source platform that runs on on-premise or any cloud (AWS, Google Cloud, Azure).
 - It includes Jupyter Notebook to develop ML algorithms, user interface to show pipeline.
+- "Kubeflow started as an open sourcing of the way Google ran TensorFlow internally, based on a pipeline called TensorFlow Extended. It began as just a simpler way to run TensorFlow jobs on Kubernetes, but has since expanded to be a multi-architecture, multi-cloud framework for running entire machine learning pipelines." (ref: [kubeflow.org](https://v0-7.kubeflow.org/docs/)) 
+- **Kubeflow applies to become a CNCF incubating project**, it is announced on 24 Octobr 2022 (ref: [opensource.googleblog.com](https://opensource.googleblog.com/2022/10/kubeflow-applies-to-become-a-cncf-incubating-project.html)).
 
 ## What is Kubelow <a name="whatIsKubeflow"></a>
 
+- "The Kubeflow project is dedicated to making deployments of machine learning (ML) workflows on Kubernetes simple, portable and scalable." (ref: kubeflow.org) 
+- "Kubeflow has developed into an end-to-end, extendable ML platform, with multiple distinct components to address specific stages of the ML lifecycle: model development (**Kubeflow Notebooks**), model training (**Kubeflow Pipelines** and **Kubeflow Training Operator**), model serving (**KServe**), and automated machine learning (**Katib**)" (ref: opensource.googleblog.com).
 
 ## How Kubeflow Works? <a name="howKubeflowWorks"></a>
+- Kubeflow works on Kubernetes with containers. 
+
+  ![image](https://user-images.githubusercontent.com/10358317/209439403-97e1d4b0-846f-486e-b2e7-950f9708d8ba.png)
+  
+- Containers' outputs can be able to connect to the other containers' inputs. With this feature, it is possible to create DAG (Directed Acyclic Graph) with containers. Each function can be able to run on the seperate containers. 
+
+
+  ![image](https://user-images.githubusercontent.com/10358317/209439487-214d6be2-5845-4548-81ec-79895fecd7d9.png)
+  (ref: kubeflow-pipelines towardsdatascience)
+
 
 
 ## What is Kubernetes? <a name="whatisKubeflow"></a>
@@ -78,6 +94,8 @@ Why should we use / learn Kubeflow?
 
 ## Kubeflow Pipeline <a name="pipeline"></a>
 
+Kubeflow Pipelines is based on Argo Workflows [3] which is a container-native workflow engine for kubernetes
+
 ## KALE (Kubeflow Automated PipeLines Engine) <a name="kale"></a>
 
 ## Katib <a name="katib"></a>
@@ -91,4 +109,6 @@ Why should we use / learn Kubeflow?
 
 
 ## References <a name="references"></a>
-
+- kubeflow.org: (kubeflow documentation) https://v0-7.kubeflow.org/docs/
+- opensource.googleblog.com: https://opensource.googleblog.com/2022/10/kubeflow-applies-to-become-a-cncf-incubating-project.html
+- kubeflow-pipelines towardsdatascience: https://towardsdatascience.com/kubeflow-pipelines-how-to-build-your-first-kubeflow-pipeline-from-scratch-2424227f7e5
