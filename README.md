@@ -81,6 +81,8 @@ Why should we use / learn Kubeflow?
 
   ![image](https://user-images.githubusercontent.com/10358317/113183089-ef51fa00-9253-11eb-9ade-771905ce8ebd.png) (Ref: Docker.com)
 
+  ![image](https://user-images.githubusercontent.com/10358317/113183210-0db7f580-9254-11eb-9716-0de635f3cbdf.png) (Ref: docs.docker.com)
+  
 - **To learn about Docker and Containers, please go to this repo:** https://github.com/omerbsezer/Fast-Docker
 
 ## What is Kubernetes? <a name="whatisKubeflow"></a>
@@ -127,3 +129,4 @@ Kubeflow Pipelines is based on Argo Workflows [3] which is a container-native wo
 - opensource.googleblog.com: https://opensource.googleblog.com/2022/10/kubeflow-applies-to-become-a-cncf-incubating-project.html
 - kubeflow-pipelines towardsdatascience: https://towardsdatascience.com/kubeflow-pipelines-how-to-build-your-first-kubeflow-pipeline-from-scratch-2424227f7e5
 - Kubernetes.io: https://kubernetes.io/docs/concepts/overview/
+- docs.docker.com: https://docs.docker.com/get-started/overview/
