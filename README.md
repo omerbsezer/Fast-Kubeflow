@@ -54,6 +54,7 @@ Why should we use / learn Kubeflow?
 ## What is Kubelow <a name="whatIsKubeflow"></a>
 - "The Kubeflow project is dedicated to making deployments of machine learning (ML) workflows on Kubernetes simple, portable and scalable." (ref: kubeflow.org) 
 - "Kubeflow has developed into an end-to-end, extendable ML platform, with multiple distinct components to address specific stages of the ML lifecycle: model development (**Kubeflow Notebooks**), model training (**Kubeflow Pipelines** and **Kubeflow Training Operator**), model serving (**KServe**), and automated machine learning (**Katib**)" (ref: opensource.googleblog.com).
+- Kubeflow is a type of ML data pipeline application that provides to create ML data pipeline (saving model and artifacts, running multiple times) like [Airflow](https://airflow.apache.org/)
 
 ## How Kubeflow Works? <a name="howKubeflowWorks"></a>
 - **Kubeflow** works on **Kubernetes** platform with **Docker Containers**.
@@ -95,22 +96,31 @@ Why should we use / learn Kubeflow?
 - **To learn about Kubernetes, please go to this repo:** https://github.com/omerbsezer/Fast-Kubernetes 
 
 ## Installing Kubeflow <a name="labEnvironment"></a>
-
 - How to install Kubeflow on WSL2 with Juju:
   - [LAB: Creating LAB Environment (WSL2), Installing Kubeflow](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md) 
 
-- To get more features like KALE, and to install in easy way: Use Kubeflow with MiniKF
-- How to install MiniKF with Vagrant and VirtualBox:
+- To get more features like KALE, and to install in easy way: Use Kubeflow with MiniKF below (preferred)
+- **Kubeflow with MiniKF:** How to install MiniKF with Vagrant and VirtualBox:
   - [LAB: Creating LAB Environment, Installing MiniKF with Vagrant](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Using-MiniKF.md)
 
 ## Kubeflow Basics <a name="basics"></a>
+- Kubeflow is an ML distributed application that contains following parts:
+  - Kubeflow Jupyter Notebook
+  - Kubeflow Pipelines
+  - KALE (Kubeflow Automated PipeLines Engine)
 
 
 ## Kubeflow Jupyter Notebook <a name="notebook"></a>
 
 ## Kubeflow Pipeline <a name="pipeline"></a>
 
-Kubeflow Pipelines is based on Argo Workflows [3] which is a container-native workflow engine for kubernetes
+- Kubeflow Pipelines is based on [Argo Workflows](https://github.com/argoproj/argo-workflows) which is a container-native workflow engine for kubernetes.
+- Kubeflow Pipelines consists of:
+  - Python SDK: which allows you to create and manipulate pipelines and their components using Kubeflow Pipelines domain-specific language.
+  - DSL compiler: which allows you to transform your pipeline defined in python code into a static configuration reflected in a YAML file. 
+  - Pipeline Service: which creates a pipeline run from the static configuration or YAML file.
+  - Kubernetes Resources: the pipeline service connects to kubernetes API in order to define the resources needed to run the pipeline defined in the YAML file.
+  - Artifact Storage: Kubeflow Pipelines storages metadata and artifacts. Metadata such as experiments, jobs, runs and metrics are stored in a MySQL database. Artifacts such as pipeline packages, large scale metrics and views are stored in an artifact store such as MinIO server [5].
 
 ## KALE (Kubeflow Automated PipeLines Engine) <a name="kale"></a>
 
@@ -130,3 +140,4 @@ Kubeflow Pipelines is based on Argo Workflows [3] which is a container-native wo
 - kubeflow-pipelines towardsdatascience: https://towardsdatascience.com/kubeflow-pipelines-how-to-build-your-first-kubeflow-pipeline-from-scratch-2424227f7e5
 - Kubernetes.io: https://kubernetes.io/docs/concepts/overview/
 - docs.docker.com: https://docs.docker.com/get-started/overview/
+- Argo Worflow: https://github.com/argoproj/argo-workflows
