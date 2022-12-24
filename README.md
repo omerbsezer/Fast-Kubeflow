@@ -49,7 +49,7 @@ Why should we use / learn Kubeflow?
 - Kubeflow is free, open source platform that runs on on-premise or any cloud (AWS, Google Cloud, Azure).
 - It includes Jupyter Notebook to develop ML algorithms, user interface to show pipeline.
 - "Kubeflow started as an open sourcing of the way Google ran TensorFlow internally, based on a pipeline called TensorFlow Extended. It began as just a simpler way to run TensorFlow jobs on Kubernetes, but has since expanded to be a multi-architecture, multi-cloud framework for running entire machine learning pipelines." (ref: [kubeflow.org](https://v0-7.kubeflow.org/docs/)) 
-- **Kubeflow applies to become a CNCF incubating project**, it is announced on 24 Octobr 2022 (ref: [opensource.googleblog.com](https://opensource.googleblog.com/2022/10/kubeflow-applies-to-become-a-cncf-incubating-project.html)).
+- **Kubeflow applies to become a CNCF incubating project**, it is announced on 24 October 2022 (ref: [opensource.googleblog.com](https://opensource.googleblog.com/2022/10/kubeflow-applies-to-become-a-cncf-incubating-project.html)).
 
 ## What is Kubelow <a name="whatIsKubeflow"></a>
 
@@ -68,8 +68,10 @@ Why should we use / learn Kubeflow?
   (ref: kubeflow-pipelines towardsdatascience)
 
 
-
 ## What is Kubernetes? <a name="whatisKubeflow"></a>
+- "Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available." (Ref: Kubernetes.io)
+
+  ![image](https://user-images.githubusercontent.com/10358317/146247396-5bc3bbf9-41fa-47ff-b10d-cac305379e21.png) (Ref: Kubernetes.io)
 
 - To learn about Kubernetes: https://github.com/omerbsezer/Fast-Kubernetes 
 
@@ -112,3 +114,4 @@ Kubeflow Pipelines is based on Argo Workflows [3] which is a container-native wo
 - kubeflow.org: (kubeflow documentation) https://v0-7.kubeflow.org/docs/
 - opensource.googleblog.com: https://opensource.googleblog.com/2022/10/kubeflow-applies-to-become-a-cncf-incubating-project.html
 - kubeflow-pipelines towardsdatascience: https://towardsdatascience.com/kubeflow-pipelines-how-to-build-your-first-kubeflow-pipeline-from-scratch-2424227f7e5
+- Kubernetes.io: https://kubernetes.io/docs/concepts/overview/
