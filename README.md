@@ -19,8 +19,8 @@ Kubeflow supposes Machine Learning (ML) Pipeline that runs on Kubernetes (K8s) C
 - [Motivation](#motivation)
 - [What is Kubelow?](#whatIsKubeflow)
 - [How Kubeflow Works?](#howKubeflowWorks)
+- [What is Container (Docker)?](#whatareContainers)
 - [What is Kubernetes?](#whatisKubeflow)
-- [What are Containers (Docker)?](#whatareContainers)
 - [Installing Kubeflow](#labEnvironment)
 - [Kubeflow Basics](#basics)
 - [Kubeflow Jupyter Notebook](#notebook)
@@ -63,22 +63,32 @@ Why should we use / learn Kubeflow?
   
 - Containers' outputs can be able to connect to the other containers' inputs. With this feature, it is possible to create DAG (Directed Acyclic Graph) with containers. Each function can be able to run on the seperate containers. 
 
-
   ![image](https://user-images.githubusercontent.com/10358317/209439487-214d6be2-5845-4548-81ec-79895fecd7d9.png)
   (ref: kubeflow-pipelines towardsdatascience)
 
+## What is Container (Docker)? <a name="#whatareContainers"></a>
+
+- Docker is a tool that reduces the gap between Development/Deployment phase of a software development cycle.
+- Docker is like VM but it has more features than VMs (no kernel, only small app and file systems, portable)
+    - On Linux Kernel (2000s) two features are added (these features support Docker):
+        - Namespaces: Isolate process.
+        - Control Groups: Resource usage (CPU, Memory) isolation and limitation for each process. 
+- Without Docker containers, each VM consumes 30% resources (Memory, CPU)
+
+  ![image](https://user-images.githubusercontent.com/10358317/113183089-ef51fa00-9253-11eb-9ade-771905ce8ebd.png) (Ref: Docker.com)
+
+- **To learn about Docker and Containers, please go to this repo:** https://github.com/omerbsezer/Fast-Docker
 
 ## What is Kubernetes? <a name="whatisKubeflow"></a>
 - "Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available." (Ref: Kubernetes.io)
 
   ![image](https://user-images.githubusercontent.com/10358317/146247396-5bc3bbf9-41fa-47ff-b10d-cac305379e21.png) (Ref: Kubernetes.io)
+  
+  ![image](https://user-images.githubusercontent.com/10358317/146250114-18759a06-e6a6-4554-bc7f-b23a13534f77.png) (Ref: Kubernetes.io)
 
-- To learn about Kubernetes: https://github.com/omerbsezer/Fast-Kubernetes 
-
-## What are Containers (Docker)? <a name="#whatareContainers"></a>
+- **To learn about Kubernetes, please go to this repo:** https://github.com/omerbsezer/Fast-Kubernetes 
 
 
-- To learn about Docker and Containers: https://github.com/omerbsezer/Fast-Docker
 
 ## Installing Kubeflow <a name="labEnvironment"></a>
 
