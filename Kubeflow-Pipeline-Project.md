@@ -3,16 +3,29 @@
 This lab/project shows:
 - how to create Kubeflow Pipeline with Custom Docker Images
 
+### Table of Contents
+- [Download Data Component](#download_data)
+- [Decision Tree Component](#decision_tree)
+- [Logistic Regression Component](#logistic_regression)
+- [SVM Component](#svm)
+- [Naive Bayes Component](#naive_bayes)
+- [Xg Boost Component](#xg_boost)
+- [Show Results Component](#show_results)
+- [Compiling, Uploading Pipeline into Kubeflow and Running](#compile_run)    
+ 
 **Steps:**
 - Create Python codes and Pipeline Components (Docker Images) for each steps:
-  - Download_data.py and Dowload Data Component (Yaml file and docker image with dockerfile that includes dowload_data.py)
-  - Decision_tree.py and Decision Tree Component (Yaml file and docker image with dockerfile that includes decision_tree.py)
-  - Logistic_regression.py and Logistic Regression Component (Yaml file and docker image with dockerfile that includes logistic_regression.py)
+  - download_data.py and Dowload Data Component (Yaml file and docker image with dockerfile that includes dowload_data.py)
+  - decision_tree.py and Decision Tree Component (Yaml file and docker image with dockerfile that includes decision_tree.py)
+  - logistic_regression.py and Logistic Regression Component (Yaml file and docker image with dockerfile that includes logistic_regression.py)
+  - svm.py and SVM Component (Yaml file and docker image with dockerfile that includes svm.py)
+  - naive_bayes.py and Naive Bayes Component (Yaml file and docker image with dockerfile that includes naive_bayes.py)
+  - xg_boost.py and XG Boost Component (Yaml file and docker image with dockerfile that includes xg_boost.py)
   - Show Results Component
   
 ### Steps
 
-#### Download Data Component
+#### Download Data Component  <a name="download_data"></a>
 
 - Creating download_data.py:
 ``` 
@@ -101,7 +114,7 @@ docker push omerbsezer/kubeflow_component:download_breast_cancer_data_v1
   ![image](https://user-images.githubusercontent.com/10358317/209472960-8d1c4031-22f3-41b5-a7e5-e69a30e6262a.png)
 
 
-#### Decision Tree Component
+#### Decision Tree Component <a name="decision_tree"></a>
 
 - Creating decision_tree.py:
 ``` 
@@ -204,7 +217,7 @@ docker image build -t omerbsezer/kubeflow_component:decision_tree_v1 .
 docker push omerbsezer/kubeflow_component:decision_tree_v1
 ```
 
-#### Logistic Regression Component
+#### Logistic Regression Component <a name="logistic_regression"></a>
 
 - Creating logistic_regression.py:
 ``` 
@@ -306,7 +319,7 @@ COPY logistic_regression.py /pipelines
 docker image build -t omerbsezer/kubeflow_component:logistic_regression_v1 .
 docker push omerbsezer/kubeflow_component:logistic_regression_v1
 ```
-#### SVM Component
+#### SVM Component <a name="svm"></a>
 
 - Creating svm.py:
 ``` 
@@ -409,7 +422,7 @@ docker image build -t omerbsezer/kubeflow_component:svm_v1 .
 docker push omerbsezer/kubeflow_component:svm_v1
 ```
 
-#### Naive Bayes Component
+#### Naive Bayes Component <a name="naive_bayes"></a>
 
 - Creating naive_bayes.py:
 ``` 
@@ -512,7 +525,7 @@ docker image build -t omerbsezer/kubeflow_component:naive_bayes_v1 .
 docker push omerbsezer/kubeflow_component:naive_bayes_v1
 ```
 
-#### XG Boost Component
+#### XG Boost Component <a name="xg_boost"></a>
 
 - Creating xg_boost.py:
 ``` 
@@ -616,7 +629,7 @@ docker image build -t omerbsezer/kubeflow_component:xg_boost_v1 .
 docker push omerbsezer/kubeflow_component:xg_boost_v1
 ```
 
-#### Show Results Component
+#### Show Results Component <a name="show_results"></a>
 
 
 - This component contains following function. It does not needed seperate docker image file. 
@@ -633,7 +646,7 @@ def show_results(decision_tree : float, logistic_regression : float, svm : float
 ``` 
 
 
-### Compiling and Uploading Pipeline into Kubeflow 
+### Compiling, Uploading Pipeline into Kubeflow and Running <a name="compile_run"></a> 
 
 - Install kfp package
 
@@ -718,6 +731,11 @@ python pipeline.py
 - When clicking on the last step:
 
   ![image](https://user-images.githubusercontent.com/10358317/209475212-0bb679b3-eedc-4bcc-823a-7c92bd098a77.png)
+  
+- We run multiple models in parallel, XGBoost has best accuracy results:
+
+  ![image](https://user-images.githubusercontent.com/10358317/209475281-4c33cff6-c056-4ee9-8c39-c5760dcfb4c6.png)
+
 
 ### References
 - https://towardsdatascience.com/kubeflow-pipelines-how-to-build-your-first-kubeflow-pipeline-from-scratch-2424227f7e5
