@@ -1,0 +1,21 @@
+name: Xg Boost classifier
+description: Trains an xg boost classifier
+
+inputs:
+- {name: Data, type: LocalPath, description: 'Path where data is stored.'}
+outputs:
+- {name: Accuracy, type: Float, description: 'Accuracy metric'}
+
+implementation:
+  container:
+    image: omerbsezer/kubeflow_component:xg_boost_v1
+    command: [
+      python, xg_boost.py,
+
+      --data,
+      {inputPath: Data},
+
+      --accuracy,
+      {outputPath: Accuracy},
+
+    ]
