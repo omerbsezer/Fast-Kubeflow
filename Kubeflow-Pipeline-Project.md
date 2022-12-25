@@ -1,7 +1,7 @@
 ## LAB / PROJECT: Kubeflow Pipeline (From Scratch) with Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)
 
 This lab/project shows:
-- how to create Kubeflow Pipeline with Custom Docker Images
+- how to create Kubeflow Pipeline with Custom Docker Images 
 
 ### Table of Contents
 - [Download Data Component](#download_data)
@@ -31,6 +31,10 @@ This lab/project shows:
 ### Steps
 
 #### Download Data Component  <a name="download_data"></a>
+
+- Dataset:
+  - https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_breast_cancer.html
+  - https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)  
 
 - Creating download_data.py:
 ``` 
