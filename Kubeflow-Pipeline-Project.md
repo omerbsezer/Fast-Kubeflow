@@ -742,7 +742,7 @@ python pipeline.py
 
   ![image](https://user-images.githubusercontent.com/10358317/209475212-0bb679b3-eedc-4bcc-823a-7c92bd098a77.png)
   
-- We run multiple models in parallel, XGBoost has best accuracy results:
+- We run multiple models in parallel, XGBoost and Decision Tree have best accuracy results:
 
   ![image](https://user-images.githubusercontent.com/10358317/209475281-4c33cff6-c056-4ee9-8c39-c5760dcfb4c6.png)
 
