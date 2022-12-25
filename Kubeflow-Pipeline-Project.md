@@ -2,6 +2,7 @@
 
 This lab/project shows:
 - how to create Kubeflow Pipeline with Custom Docker Images 
+- all Python and YAML files can be reachable: https://github.com/omerbsezer/Fast-Kubeflow/tree/main/Project_Kubeflow_Pipeline_MLModels 
 
 ### Table of Contents
 - [Download Data Component](#download_data)
