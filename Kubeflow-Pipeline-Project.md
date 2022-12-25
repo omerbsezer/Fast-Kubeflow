@@ -98,6 +98,9 @@ docker image build -t omerbsezer/kubeflow_component:download_breast_cancer_data_
 docker push omerbsezer/kubeflow_component:download_breast_cancer_data_v1
 ```
 
+  ![image](https://user-images.githubusercontent.com/10358317/209472960-8d1c4031-22f3-41b5-a7e5-e69a30e6262a.png)
+
+
 #### Decision Tree Component
 
 - Creating decision_tree.py:
