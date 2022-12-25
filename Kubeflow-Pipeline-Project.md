@@ -1,4 +1,4 @@
-## LAB / PROJECT: Kubeflow Pipeline (From Scratch) with Custom Docker Images (Decision Tree, Logistic Regression)
+## LAB / PROJECT: Kubeflow Pipeline (From Scratch) with Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)
 
 This lab/project shows:
 - how to create Kubeflow Pipeline with Custom Docker Images
