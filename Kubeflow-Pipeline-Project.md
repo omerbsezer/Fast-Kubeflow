@@ -12,7 +12,12 @@ This lab/project shows:
 - [Xg Boost Component](#xg_boost)
 - [Show Results Component](#show_results)
 - [Compiling, Uploading Pipeline into Kubeflow and Running](#compile_run)    
- 
+
+### Prerequisite
+
+- You should have Kubeflow Environment (Easiest Way: Using MiniKF)
+  - [LAB: Creating LAB Environment, Installing MiniKF with Vagrant](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Using-MiniKF.md)
+  
 **Steps:**
 - Create Python codes and Pipeline Components (Docker Images) for each steps:
   - download_data.py and Dowload Data Component (Yaml file and docker image with dockerfile that includes dowload_data.py)
