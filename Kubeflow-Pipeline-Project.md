@@ -12,7 +12,8 @@ This lab/project shows:
 - [Naive Bayes Component](#naive_bayes)
 - [Xg Boost Component](#xg_boost)
 - [Show Results Component](#show_results)
-- [Compiling, Uploading Pipeline into Kubeflow and Running](#compile_run)    
+- [Compiling, Uploading Pipeline into Kubeflow and Running](#compile_run)
+- [References](#references)        
 
 ### Prerequisite
 
@@ -747,5 +748,5 @@ python pipeline.py
   ![image](https://user-images.githubusercontent.com/10358317/209475281-4c33cff6-c056-4ee9-8c39-c5760dcfb4c6.png)
 
 
-### References
+### References <a name="references"></a> 
 - https://towardsdatascience.com/kubeflow-pipelines-how-to-build-your-first-kubeflow-pipeline-from-scratch-2424227f7e5
