@@ -13,7 +13,7 @@ Kubeflow supposes Machine Learning (ML) Pipeline that runs on Kubernetes (K8s) C
 # Quick Look (HowTo): Scenarios - Hands-on LABs
 - [LAB: Creating LAB Environment (WSL2), Installing Kubeflow with MicroK8s, Juju on Ubuntu 20.04](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md)
 - [LAB: Creating LAB Environment, Installing MiniKF with Vagrant](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Using-MiniKF.md)
-- [LAB: Kubeflow: Decision Tree, Logistic Regression Example]()
+- [LAB: Project1, Kubeflow Pipeline (From Scratch) with Custom Docker Images (Decision Tree, Logistic Regression)]()
 
 # Table of Contents
 - [Motivation](#motivation)
@@ -113,19 +113,22 @@ Why should we use / learn Kubeflow?
 ## Kubeflow Jupyter Notebook <a name="notebook"></a>
 
 ## Kubeflow Pipeline <a name="pipeline"></a>
-
 - Kubeflow Pipelines is based on [Argo Workflows](https://github.com/argoproj/argo-workflows) which is a container-native workflow engine for kubernetes.
-- Kubeflow Pipelines consists of:
-  - Python SDK: which allows you to create and manipulate pipelines and their components using Kubeflow Pipelines domain-specific language.
-  - DSL compiler: which allows you to transform your pipeline defined in python code into a static configuration reflected in a YAML file. 
-  - Pipeline Service: which creates a pipeline run from the static configuration or YAML file.
-  - Kubernetes Resources: the pipeline service connects to kubernetes API in order to define the resources needed to run the pipeline defined in the YAML file.
-  - Artifact Storage: Kubeflow Pipelines storages metadata and artifacts. Metadata such as experiments, jobs, runs and metrics are stored in a MySQL database. Artifacts such as pipeline packages, large scale metrics and views are stored in an artifact store such as MinIO server [5].
+- Kubeflow Pipelines consists of (ref: Kubeflow-Book):
+  - **Python SDK:** allows you to create and manipulate pipelines and their components using Kubeflow Pipelines domain-specific language.
+  - **DSL compiler:** allows you to transform your pipeline defined in python code into a static configuration reflected in a YAML file. 
+  - **Pipeline Service:** creates a pipeline run from the static configuration or YAML file.
+  - **Kubernetes Resources:** the pipeline service connects to kubernetes API in order to define the resources needed to run the pipeline defined in the YAML file.
+  - **Artifact Storage:** Kubeflow Pipelines storages metadata and artifacts. Metadata such as experiments, jobs, runs and metrics are stored in a MySQL database. Artifacts such as pipeline packages, large scale metrics and views are stored in an artifact store such as MinIO server.
 
+- Have a look to Kubeflow Pipeline Project:
+  - [LAB: Project1, Kubeflow Pipeline (From Scratch) with Custom Docker Images (Decision Tree, Logistic Regression)]()
+  
 ## KALE (Kubeflow Automated PipeLines Engine) <a name="kale"></a>
 
 ## Katib <a name="katib"></a>
 
+## KFServing <a name="kfserving"></a>
 
 ## Minio (Object Storage) <a name="minio"></a>
 
@@ -141,3 +144,4 @@ Why should we use / learn Kubeflow?
 - Kubernetes.io: https://kubernetes.io/docs/concepts/overview/
 - docs.docker.com: https://docs.docker.com/get-started/overview/
 - Argo Worflow: https://github.com/argoproj/argo-workflows
+- Kubeflow-Book: https://www.amazon.com.mx/Kubeflow-Machine-Learning-Lab-Production/dp/1492050121
