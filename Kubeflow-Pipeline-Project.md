@@ -306,6 +306,101 @@ COPY logistic_regression.py /pipelines
 docker image build -t omerbsezer/kubeflow_component:logistic_regression_v1 .
 docker push omerbsezer/kubeflow_component:logistic_regression_v1
 ```
+#### SVM Component
+
+- Creating svm.py:
+``` 
+
+``` 
+
+- Create SVM component (svm.yaml)
+```
+
+```
+
+- Create requirements.txt:
+``` 
+scikit-learn
+``` 
+
+- Dockerfile:
+``` 
+FROM python:3.8-slim
+WORKDIR /pipelines
+COPY requirements.txt /pipelines
+RUN pip install -r requirements.txt
+COPY svm.py /pipelines
+``` 
+
+- Go to the path where dockerfile is, then build Dockerfile and push the image to the Docker Registry:
+``` 
+docker image build -t omerbsezer/kubeflow_component:svm_v1 .
+docker push omerbsezer/kubeflow_component:svm_v1
+```
+
+#### Naive Bayes Component
+
+- Creating naive_bayes.py:
+``` 
+
+``` 
+
+- Create naive bayes component (naive_bayes.yaml)
+```
+
+```
+
+- Create requirements.txt:
+``` 
+scikit-learn
+``` 
+
+- Dockerfile:
+``` 
+FROM python:3.8-slim
+WORKDIR /pipelines
+COPY requirements.txt /pipelines
+RUN pip install -r requirements.txt
+COPY naive_bayes.py /pipelines
+``` 
+
+- Go to the path where dockerfile is, then build Dockerfile and push the image to the Docker Registry:
+``` 
+docker image build -t omerbsezer/kubeflow_component:naive_bayes_v1 .
+docker push omerbsezer/kubeflow_component:naive_bayes_v1
+```
+
+#### XG Boost Component
+
+- Creating xg_boost.py:
+``` 
+
+``` 
+
+- Create XgBoost component (xg_boost.yaml)
+```
+
+```
+
+- Create requirements.txt:
+``` 
+scikit-learn
+``` 
+
+- Dockerfile:
+``` 
+FROM python:3.8-slim
+WORKDIR /pipelines
+COPY requirements.txt /pipelines
+RUN pip install -r requirements.txt
+COPY xg_boost.py /pipelines
+``` 
+
+- Go to the path where dockerfile is, then build Dockerfile and push the image to the Docker Registry:
+``` 
+docker image build -t omerbsezer/kubeflow_component:xg_boost_v1 .
+docker push omerbsezer/kubeflow_component:xg_boost_v1
+```
 
 #### Show Results Component
 
