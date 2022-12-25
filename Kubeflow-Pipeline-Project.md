@@ -310,12 +310,83 @@ docker push omerbsezer/kubeflow_component:logistic_regression_v1
 
 - Creating svm.py:
 ``` 
+import json
 
+import argparse
+from pathlib import Path
+
+from sklearn.metrics import accuracy_score
+from sklearn.svm import SVC
+
+def _svm(args):
+
+    # Open and reads file "data"
+    with open(args.data) as data_file:
+        data = json.load(data_file)
+    
+    # Data type is 'dict', however since the file was loaded as a json object, it is first loaded as a string
+    # thus we need to load again from such string in order to get the dict-type object.
+    data = json.loads(data)
+
+    x_train = data['x_train']
+    y_train = data['y_train']
+    x_test = data['x_test']
+    y_test = data['y_test']
+    
+    # Initialize and train the model
+    model = SVC(kernel='linear')
+    model.fit(x_train, y_train)
+
+    # Get predictions
+    y_pred = model.predict(x_test)
+    
+    # Get accuracy
+    accuracy = accuracy_score(y_test, y_pred)
+
+    # Save output into file
+    with open(args.accuracy, 'w') as accuracy_file:
+        accuracy_file.write(str(accuracy))
+
+if __name__ == '__main__':
+
+    # Defining and parsing the command-line arguments
+    parser = argparse.ArgumentParser(description='My program description')
+    # Input argument: data
+    parser.add_argument('--data', type=str)
+    # Output argument: accuracy
+    parser.add_argument('--accuracy', type=str)
+
+    args = parser.parse_args()
+
+    # Creating the directory where the OUTPUT file will be created (the directory may or may not exist).
+    Path(args.accuracy).parent.mkdir(parents=True, exist_ok=True)
+    
+    _svm(args)
 ``` 
 
 - Create SVM component (svm.yaml)
 ```
+name: Support Vector (svm) classifier
+description: Trains a svm classifier
 
+inputs:
+- {name: Data, type: LocalPath, description: 'Path where data is stored.'}
+outputs:
+- {name: Accuracy, type: Float, description: 'Accuracy metric'}
+
+implementation:
+  container:
+    image: omerbsezer/kubeflow_component:svm_v1
+    command: [
+      python, svm.py,
+
+      --data,
+      {inputPath: Data},
+
+      --accuracy,
+      {outputPath: Accuracy},
+
+    ]
 ```
 
 - Create requirements.txt:
@@ -342,12 +413,83 @@ docker push omerbsezer/kubeflow_component:svm_v1
 
 - Creating naive_bayes.py:
 ``` 
+import json
 
+import argparse
+from pathlib import Path
+
+from sklearn.metrics import accuracy_score
+from sklearn.naive_bayes import GaussianNB
+
+def _naive_bayes(args):
+
+    # Open and reads file "data"
+    with open(args.data) as data_file:
+        data = json.load(data_file)
+    
+    # Data type is 'dict', however since the file was loaded as a json object, it is first loaded as a string
+    # thus we need to load again from such string in order to get the dict-type object.
+    data = json.loads(data)
+
+    x_train = data['x_train']
+    y_train = data['y_train']
+    x_test = data['x_test']
+    y_test = data['y_test']
+    
+    # Initialize and train the model
+    model = GaussianNB()
+    model.fit(x_train, y_train)
+
+    # Get predictions
+    y_pred = model.predict(x_test)
+    
+    # Get accuracy
+    accuracy = accuracy_score(y_test, y_pred)
+
+    # Save output into file
+    with open(args.accuracy, 'w') as accuracy_file:
+        accuracy_file.write(str(accuracy))
+
+if __name__ == '__main__':
+
+    # Defining and parsing the command-line arguments
+    parser = argparse.ArgumentParser(description='My program description')
+    # Input argument: data
+    parser.add_argument('--data', type=str)
+    # Output argument: accuracy
+    parser.add_argument('--accuracy', type=str)
+
+    args = parser.parse_args()
+
+    # Creating the directory where the OUTPUT file will be created (the directory may or may not exist).
+    Path(args.accuracy).parent.mkdir(parents=True, exist_ok=True)
+    
+    _naive_bayes(args)
 ``` 
 
 - Create naive bayes component (naive_bayes.yaml)
 ```
+name: Naive Bayes classifier
+description: Trains a Naive Bayes classifier
 
+inputs:
+- {name: Data, type: LocalPath, description: 'Path where data is stored.'}
+outputs:
+- {name: Accuracy, type: Float, description: 'Accuracy metric'}
+
+implementation:
+  container:
+    image: omerbsezer/kubeflow_component:naive_bayes_v1
+    command: [
+      python, naive_bayes.py,
+
+      --data,
+      {inputPath: Data},
+
+      --accuracy,
+      {outputPath: Accuracy},
+
+    ]
 ```
 
 - Create requirements.txt:
@@ -374,17 +516,89 @@ docker push omerbsezer/kubeflow_component:naive_bayes_v1
 
 - Creating xg_boost.py:
 ``` 
+import json
 
+import argparse
+from pathlib import Path
+
+from sklearn.metrics import accuracy_score
+from xgboost import XGBClassifier
+
+def _xg_boost(args):
+
+    # Open and reads file "data"
+    with open(args.data) as data_file:
+        data = json.load(data_file)
+    
+    # Data type is 'dict', however since the file was loaded as a json object, it is first loaded as a string
+    # thus we need to load again from such string in order to get the dict-type object.
+    data = json.loads(data)
+
+    x_train = data['x_train']
+    y_train = data['y_train']
+    x_test = data['x_test']
+    y_test = data['y_test']
+    
+    # Initialize and train the model
+    model = XGBClassifier()
+    model.fit(x_train, y_train)
+
+    # Get predictions
+    y_pred = model.predict(x_test)
+    
+    # Get accuracy
+    accuracy = accuracy_score(y_test, y_pred)
+
+    # Save output into file
+    with open(args.accuracy, 'w') as accuracy_file:
+        accuracy_file.write(str(accuracy))
+
+if __name__ == '__main__':
+
+    # Defining and parsing the command-line arguments
+    parser = argparse.ArgumentParser(description='My program description')
+    # Input argument: data
+    parser.add_argument('--data', type=str)
+    # Output argument: accuracy
+    parser.add_argument('--accuracy', type=str)
+
+    args = parser.parse_args()
+
+    # Creating the directory where the OUTPUT file will be created (the directory may or may not exist).
+    Path(args.accuracy).parent.mkdir(parents=True, exist_ok=True)
+    
+    _xg_boost(args)
 ``` 
 
 - Create XgBoost component (xg_boost.yaml)
 ```
+name: Xg Boost classifier
+description: Trains an xg boost classifier
 
+inputs:
+- {name: Data, type: LocalPath, description: 'Path where data is stored.'}
+outputs:
+- {name: Accuracy, type: Float, description: 'Accuracy metric'}
+
+implementation:
+  container:
+    image: omerbsezer/kubeflow_component:xg_boost_v1
+    command: [
+      python, xg_boost.py,
+
+      --data,
+      {inputPath: Data},
+
+      --accuracy,
+      {outputPath: Accuracy},
+
+    ]
 ```
 
 - Create requirements.txt:
 ``` 
 scikit-learn
+xgboost
 ``` 
 
 - Dockerfile:
@@ -408,12 +622,14 @@ docker push omerbsezer/kubeflow_component:xg_boost_v1
 - This component contains following function. It does not needed seperate docker image file. 
 ``` 
 @func_to_container_op
-def show_results(decision_tree : float, logistic_regression : float) -> None:
-    # Given the outputs from decision_tree and logistic regression components
-    # the results are shown.
+def show_results(decision_tree : float, logistic_regression : float, svm : float, naive_bayes : float, xg_boost : float) -> None:
+    # Given the outputs from decision_tree, logistic regression, svm, naive_bayes, xg_boost components
 
     print(f"Decision tree (accuracy): {decision_tree}")
     print(f"Logistic regression (accuracy): {logistic_regression}")
+    print(f"SVM (SVC) (accuracy): {svm}")
+    print(f"Naive Bayes (Gaussian) (accuracy): {naive_bayes}")
+    print(f"XG Boost (accuracy): {xg_boost}")
 ``` 
 
 
@@ -432,43 +648,76 @@ from kfp import dsl
 from kfp.components import func_to_container_op
 
 @func_to_container_op
-def show_results(decision_tree : float, logistic_regression : float) -> None:
-    # Given the outputs from decision_tree and logistic regression components
-    # the results are shown.
+def show_results(decision_tree : float, logistic_regression : float, svm : float, naive_bayes : float, xg_boost : float) -> None:
+    # Given the outputs from decision_tree, logistic regression, svm, naive_bayes, xg_boost components
 
     print(f"Decision tree (accuracy): {decision_tree}")
     print(f"Logistic regression (accuracy): {logistic_regression}")
+    print(f"SVM (SVC) (accuracy): {svm}")
+    print(f"Naive Bayes (Gaussian) (accuracy): {naive_bayes}")
+    print(f"XG Boost (accuracy): {xg_boost}")
 
-
-@dsl.pipeline(name='First Pipeline', description='Applies Decision Tree and Logistic Regression for classification problem.')
-def first_pipeline():
+@dsl.pipeline(name='ML Models Pipeline', description='Applies Decision Tree, Logistic Regression, SVM, Naive Bayes, XG Boost for classification problem.')
+def ml_models_pipeline():
 
     # Loads the yaml manifest for each component
     download = kfp.components.load_component_from_file('download_data/download_data.yaml')
     decision_tree = kfp.components.load_component_from_file('decision_tree/decision_tree.yaml')
     logistic_regression = kfp.components.load_component_from_file('logistic_regression/logistic_regression.yaml')
+    svm = kfp.components.load_component_from_file('svm/svm.yaml')
+    naive_bayes = kfp.components.load_component_from_file('naive_bayes/naive_bayes.yaml')
+    xg_boost = kfp.components.load_component_from_file('xg_boost/xg_boost.yaml')
 
     # Run download_data task
     download_task = download()
 
-    # Run tasks "decison_tree" and "logistic_regression" given
-    # the output generated by "download_task".
+    # Run ML models tasks with input data
     decision_tree_task = decision_tree(download_task.output)
     logistic_regression_task = logistic_regression(download_task.output)
+    svm_task = svm(download_task.output)
+    naive_bayes_task = naive_bayes(download_task.output)
+    xg_boost_task = xg_boost(download_task.output)
 
-    # Given the outputs from "decision_tree" and "logistic_regression"
+    # Given the outputs from ML models tasks
     # the component "show_results" is called to print the results.
-    show_results(decision_tree_task.output, logistic_regression_task.output)
+    show_results(decision_tree_task.output, logistic_regression_task.output, svm_task.output, naive_bayes_task.output, xg_boost_task.output)
 
 if __name__ == '__main__':
-    kfp.compiler.Compiler().compile(first_pipeline, 'FirstPipeline.yaml')
-    # kfp.Client().create_run_from_pipeline_func(basic_pipeline, arguments={})
+    kfp.compiler.Compiler().compile(ml_models_pipeline, 'MLModelsPipeline.yaml')
 ``` 
 
-- Run pipeline (DSL Compile) to create Workflow Pipeline (Argoflow). After creating pipeline, it creates 'FirstPipeline.yaml'.
+- Run pipeline (DSL Compile) to create Workflow Pipeline (Argoflow). After creating pipeline, it creates 'MLModelsPipeline.yaml'.
 ``` 
 python pipeline.py
 ``` 
+
+- Import Kubeflow created 'MLModelsPipeline.yaml':
+
+  ![image](https://user-images.githubusercontent.com/10358317/209474987-491cc641-2dcf-4623-8559-8e24e569885e.png)
+
+- Create an experiment:
+  
+  ![image](https://user-images.githubusercontent.com/10358317/209475006-08d4e3a0-2fd3-4ae6-b87f-1290b828ef79.png)
+
+- Create a run:
+
+  ![image](https://user-images.githubusercontent.com/10358317/209475058-42ddccdd-18a4-4d93-af10-48b36113a27b.png)
+
+- Kubeflow creates pipeline and runs it: 
+  
+  ![image](https://user-images.githubusercontent.com/10358317/209475074-ee5f96d5-98a3-4e53-8f0a-2a37b8931b23.png)
+
+- With 'kubectl get pods -n kubeflow-user', we can follow the status of the running pods in the K8s cluster (in our scenario, in MiniKF)
+
+  ![image](https://user-images.githubusercontent.com/10358317/209475100-c50f9c87-383b-4293-b00a-0c3ae886d02a.png)
+  
+- When clicking on the each step, it can be seen the details
+
+  ![image](https://user-images.githubusercontent.com/10358317/209475176-7f581ddb-c618-4815-bb5d-02c879fcbf22.png)
+
+- When clicking on the last step:
+
+  ![image](https://user-images.githubusercontent.com/10358317/209475212-0bb679b3-eedc-4bcc-823a-7c92bd098a77.png)
 
 ### References
 - https://towardsdatascience.com/kubeflow-pipelines-how-to-build-your-first-kubeflow-pipeline-from-scratch-2424227f7e5
