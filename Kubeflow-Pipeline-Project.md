@@ -640,9 +640,11 @@ docker image build -t omerbsezer/kubeflow_component:xg_boost_v1 .
 docker push omerbsezer/kubeflow_component:xg_boost_v1
 ```
 
+- All Docker images in local machine: 
+  
+  ![image](https://user-images.githubusercontent.com/10358317/209476284-4746b40d-092c-43b9-acfa-2f20d83c652e.png)
+
 #### Show Results Component <a name="show_results"></a>
-
-
 - This component contains following function. It does not needed seperate docker image file. 
 ``` 
 @func_to_container_op
