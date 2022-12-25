@@ -122,10 +122,8 @@ Why should we use / learn Kubeflow?
   - **Artifact Storage:** Kubeflow Pipelines storages metadata and artifacts. Metadata such as experiments, jobs, runs and metrics are stored in a MySQL database. Artifacts such as pipeline packages, large scale metrics and views are stored in an artifact store such as MinIO server.
 
 - Have a look to Kubeflow Pipeline Project:
-  
-  ![image](https://user-images.githubusercontent.com/10358317/209475619-23d23d4c-3c44-4f93-8d1b-53fb0f84bde0.png)
-
   - [LAB/Project: Kubeflow Pipeline (From Scratch) with Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kubeflow-Pipeline-Project.md)
+  - ![image](https://user-images.githubusercontent.com/10358317/209475619-23d23d4c-3c44-4f93-8d1b-53fb0f84bde0.png)
   
 ## KALE (Kubeflow Automated PipeLines Engine) <a name="kale"></a>
 
