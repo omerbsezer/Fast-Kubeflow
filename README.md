@@ -109,8 +109,21 @@ Why should we use / learn Kubeflow?
   - Kubeflow Pipelines
   - KALE (Kubeflow Automated PipeLines Engine)
 
-
 ## Kubeflow Jupyter Notebook <a name="notebook"></a>
+- Kubeflow creates Notebook using containers and K8s pod. 
+- When user wants to run new notebook, user can configure:
+  - which image should be base image under the notebook pod, 
+  - how many CPU core and RAM the notebook pod should use,
+  - if there is GPU in the K8s cluster, should this use or not for the notebook pod,
+  - how much volume space (workspace volume) should be use for this notebook pod,
+  - should the existing volume space be shared with other notebook pods,
+  - should persistent volume be used (PV, PVC with NFS volume), 
+  - which environment variables or secrets should be reachable from notebook pod, 
+  - should this notebook pod run on which server in the cluster, with which pods (K8s affinity, tolerations)
+  
+  ![image](https://user-images.githubusercontent.com/10358317/209553212-02b47ac4-7d6a-4f8c-bbae-f4fdbffc5f8e.png)
+  
+  ![image](https://user-images.githubusercontent.com/10358317/209553471-7e3725f3-e6c6-4090-85ee-7325965fdc2a.png)
 
 ## Kubeflow Pipeline <a name="pipeline"></a>
 - Kubeflow Pipelines is based on [Argo Workflows](https://github.com/argoproj/argo-workflows) which is a container-native workflow engine for kubernetes.
