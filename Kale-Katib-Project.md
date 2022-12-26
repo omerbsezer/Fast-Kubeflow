@@ -1,9 +1,13 @@
-## LAB / PROJECT: KALE 
+## LAB / PROJECT: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)
 
 This lab/project shows:
-- how to run Kale
+- how to use KALE and KATIB in a project.
 
+### Prerequisite
 
+- You should have Kubeflow Environment (Easiest Way: Using MiniKF)
+  - [LAB: Creating LAB Environment, Installing MiniKF with Vagrant](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Using-MiniKF.md)
+  
 ### Steps
 
 - Create a new notebook server pod and connect:
@@ -20,7 +24,7 @@ This lab/project shows:
 git clone https://github.com/kubeflow-kale/kale
 ``` 
 
-- Open the ipynb file (open-vaccine.ipynb)
+- Open the ipynb file (kale/examples/openvaccine-kaggle-competition/open-vaccine.ipynb)
 - Run the cell "pip install -r requirements.txt" to install requirements
 
   ![image](https://user-images.githubusercontent.com/10358317/209570256-2adda5b9-4694-4230-bded-25041171f367.png)
@@ -75,5 +79,5 @@ git clone https://github.com/kubeflow-kale/kale
   ![image](https://user-images.githubusercontent.com/10358317/209573921-57ff4731-4a5d-4ae8-8e93-e5093daee365.png)
 
 
-
-  
+### References
+- https://www.arrikto.com/blog/intro-to-kubeflow-katib-training-and-certification-recap-oct-13-2022/
