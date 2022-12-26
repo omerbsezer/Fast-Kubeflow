@@ -133,7 +133,7 @@ Why should we use / learn Kubeflow?
 
   ![image](https://user-images.githubusercontent.com/10358317/209555127-64165f14-d0cf-4905-9b1f-34e78a816fb5.png)
 
-- After creating notebook pod, in MiniFK, it triggers to create volume automatically (with ROK storage class), user can reach files and even downloads the files.
+- After creating notebook pod, in MiniKF, it triggers to create volume automatically (with ROK storage class), user can reach files and even downloads the files.
 
   ![image](https://user-images.githubusercontent.com/10358317/209556536-b0709d72-d96b-4f7d-a917-cb690ccf90e9.png)
 
