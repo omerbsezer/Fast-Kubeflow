@@ -63,8 +63,17 @@ git clone https://github.com/kubeflow-kale/kale
  
   ![image](https://user-images.githubusercontent.com/10358317/209571847-1da5a75c-a7f4-428e-af1c-4dd14867e729.png)
   
-  ![image](https://user-images.githubusercontent.com/10358317/209572341-0d62a3e7-d32b-4bca-96ad-c274cbf0ae8d.png)
   
+- After waiting some time to finish all trials to find best hyperparameters:
+
+  ![image](https://user-images.githubusercontent.com/10358317/209573641-b20c09b2-3f37-4cd3-a930-c0cce45a00e4.png)
+  
+  ![image](https://user-images.githubusercontent.com/10358317/209573771-52842638-6ba2-4d65-8b29-3b232ee7f365.png)
+
+- In the "Run" section, it can be seen that pipeline is completed and details can be reachable clicking on the each block step:
+
+  ![image](https://user-images.githubusercontent.com/10358317/209573921-57ff4731-4a5d-4ae8-8e93-e5093daee365.png)
+
 
 
   
