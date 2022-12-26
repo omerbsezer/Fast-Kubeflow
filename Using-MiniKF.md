@@ -4,16 +4,26 @@ This lab shows:
 - how to install and use MiniKF
 - how to solve problems while installing MiniKF
 
-### Kubeflow
+### Table of Contents
+- [Kubeflow](#kubeflow)
+  - [What is MiniKF?](#minikf)
+  - [Why should we use MiniKF?](#why)
+  - [How do we install MiniKF?](#install)
+- [Troubleshooting](#troubleshooting)
+  - [One of the pod is not ready (34/35 remaining)](#one)
+  - [Can't connect to MiniKF landing page on http://10.10.10.10 after installing MiniKF](#connect)
+  - [Increasing 'config.vm.boot_timeout'](#timeout)
 
-#### What is MiniKF?
+### Kubeflow  <a name="kubeflow"></a>
+
+#### What is MiniKF?  <a name="minikf"></a>
 - MiniKF is a virtual machine that is created by Arrikto. 
 - MiniKF = Minikube + Kubeflow + ROK (Rok: Data Management Platform on Kubernetes, developed by Arrikto)
 
-#### Why should we use MiniKF?
+#### Why should we use MiniKF?  <a name="why"></a>
 - It is free and easy to use quickly for learning and developing Kubeflow pipelines in a one-virtual-machine. 
 
-#### How do we install MiniKF?
+#### How do we install MiniKF?  <a name="install"></a>
 
 - Install Virtualbox 6.1.40 (stable with Vagrant and MiniKF)=> https://download.virtualbox.org/virtualbox/6.1.40/
 
@@ -58,9 +68,9 @@ kubectl -n kubeflow get pods
 
 
 
-### Troubleshooting
+### Troubleshooting  <a name="troubleshooting"></a>
 
-#### One of the pod is not ready (34/35 remaining)
+#### One of the pod is not ready (34/35 remaining)  <a name="one"></a>
 
   ![image](https://user-images.githubusercontent.com/10358317/208670873-eca5f940-db9b-40fe-83b0-01415327e0d9.png)
 
@@ -79,13 +89,13 @@ kubectl delete pod notebook-controller-deployment-7c46fdd957-87zfw -n kubeflow
   ![image](https://user-images.githubusercontent.com/10358317/208675116-a686a234-c9d1-4b38-bdef-302edf857bf6.png)
 
 
-#### Can't connect to MiniKF landing page on http://10.10.10.10 after installing MiniKF
+#### Can't connect to MiniKF landing page on http://10.10.10.10 after installing MiniKF  <a name="connect"></a>
 
 - According to this post: https://stackoverflow.com/questions/60820998/cant-connect-to-minikf-landing-page-on-http-10-10-10-10-after-installing-mini
 
 - Stop VM using VirtualBox GUI and run 'vagrant up' again, then http://10.10.10.10
 
-#### Increasing 'config.vm.boot_timeout' 
+#### Increasing 'config.vm.boot_timeout'   <a name="timeout"></a>
 
 - According to this post: https://stackoverflow.com/questions/32731629/where-to-find-config-vm-boot-timeout
 
