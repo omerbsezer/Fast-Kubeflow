@@ -61,5 +61,10 @@ git clone https://github.com/kubeflow-kale/kale
   
 - We can see the hyperparameter and trials:
  
-![image](https://user-images.githubusercontent.com/10358317/209571847-1da5a75c-a7f4-428e-af1c-4dd14867e729.png)
+  ![image](https://user-images.githubusercontent.com/10358317/209571847-1da5a75c-a7f4-428e-af1c-4dd14867e729.png)
+  
+  ![image](https://user-images.githubusercontent.com/10358317/209572341-0d62a3e7-d32b-4bca-96ad-c274cbf0ae8d.png)
+  
+
+
   
