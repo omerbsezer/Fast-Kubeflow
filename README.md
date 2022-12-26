@@ -124,6 +124,14 @@ Why should we use / learn Kubeflow?
   ![image](https://user-images.githubusercontent.com/10358317/209553212-02b47ac4-7d6a-4f8c-bbae-f4fdbffc5f8e.png)
   
   ![image](https://user-images.githubusercontent.com/10358317/209553471-7e3725f3-e6c6-4090-85ee-7325965fdc2a.png)
+  
+- After launching notebook pod, it creates pod and we can connect it to open the notebook.
+
+  ![image](https://user-images.githubusercontent.com/10358317/209554908-563a5275-6cfa-4caa-87d3-f20746018bce.png)
+  
+  ![image](https://user-images.githubusercontent.com/10358317/209554997-9b036ea1-3e9b-4943-96d1-48ada830535d.png)
+
+  ![image](https://user-images.githubusercontent.com/10358317/209555127-64165f14-d0cf-4905-9b1f-34e78a816fb5.png)
 
 ## Kubeflow Pipeline <a name="pipeline"></a>
 - Kubeflow Pipelines is based on [Argo Workflows](https://github.com/argoproj/argo-workflows) which is a container-native workflow engine for kubernetes.
