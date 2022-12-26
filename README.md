@@ -14,6 +14,7 @@ Kubeflow supposes Machine Learning (ML) Pipeline that runs on Kubernetes (K8s) C
 - [LAB: Creating LAB Environment (WSL2), Installing Kubeflow with MicroK8s, Juju on Ubuntu 20.04](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md)
 - [LAB: Creating LAB Environment, Installing MiniKF with Vagrant](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Using-MiniKF.md)
 - [LAB/Project: Kubeflow Pipeline (From Scratch) with Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kubeflow-Pipeline-Project.md)
+- [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](https://github.com/omerbsezer/Fast-Kubeflow/edit/main/Kale-Katib-Project.md)
 
 # Table of Contents
 - [Motivation](#motivation)
@@ -151,8 +152,28 @@ Why should we use / learn Kubeflow?
   - ![image](https://user-images.githubusercontent.com/10358317/209475619-23d23d4c-3c44-4f93-8d1b-53fb0f84bde0.png)
   
 ## KALE (Kubeflow Automated PipeLines Engine) <a name="kale"></a>
+- KALE (Kubeflow Automated pipeLines Engine) is a project that aims at simplifying the Data Science experience of deploying Kubeflow Pipelines workflows.
+- Kale bridges this gap by providing a simple UI to define Kubeflow Pipelines workflows directly from you JupyterLab interface, without the need to change a single line of code (ref: https://github.com/kubeflow-kale/kale).
+- With KALE, each cells are tagged and worklow can be created by connecting cells, then after compiling, Kubeflow Pipeline is created and run. 
+- KALE feature helps data scientist to run on Kubeflow quickly without creating any container manually. 
 
-## Katib <a name="katib"></a>
+  ![image](https://user-images.githubusercontent.com/10358317/209575043-329be596-ffd1-4402-87b6-9c1073b5043e.png) (ref: KALE Tags)
+
+- Have a look to KALE and KATIB Project:  
+  - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](https://github.com/omerbsezer/Fast-Kubeflow/edit/main/Kale-Katib-Project.md)
+    ![image](https://user-images.githubusercontent.com/10358317/209570786-e88cb620-74b6-4284-bfb9-43f385c48cdc.png)
+  
+## KATIB <a name="katib"></a>
+- Katib is a Kubernetes-native project for automated machine learning (AutoML). Katib supports Hyperparameter Tuning, Early Stopping and Neural Architecture Search.
+- Katib has search methods (ref: https://github.com/kubeflow/katib): 
+  - **Hyperparameter Tuning:** Random Search, Grid Search, Bayesian Optimization, TPE, Multivariate TPE, CMA-ES, Sobol's Quasirandom Sequence, HyperBand, Population Based Training.	
+  - **Neural Architecture Search:** ENAS, DARTS
+  - **Early Stopping:** Median Stop
+
+  ![image](https://user-images.githubusercontent.com/10358317/209573641-b20c09b2-3f37-4cd3-a930-c0cce45a00e4.png)
+
+- Have a look to KALE and KATIB Project:  
+  - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](https://github.com/omerbsezer/Fast-Kubeflow/edit/main/Kale-Katib-Project.md)  
 
 ## KFServing <a name="kfserving"></a>
 
@@ -171,3 +192,6 @@ Why should we use / learn Kubeflow?
 - docs.docker.com: https://docs.docker.com/get-started/overview/
 - Argo Worflow: https://github.com/argoproj/argo-workflows
 - Kubeflow-Book: https://www.amazon.com.mx/Kubeflow-Machine-Learning-Lab-Production/dp/1492050121
+- KALE: https://github.com/kubeflow-kale/kale
+- KATIB: https://github.com/kubeflow/katib,
+- KALE Tags: https://medium.com/kubeflow/automating-jupyter-notebook-deployments-to-kubeflow-pipelines-with-kale-a4ede38bea1f
