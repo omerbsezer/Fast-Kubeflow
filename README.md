@@ -161,6 +161,7 @@ Why should we use / learn Kubeflow?
 
 - Have a look to KALE and KATIB Project:  
   - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](https://github.com/omerbsezer/Fast-Kubeflow/edit/main/Kale-Katib-Project.md)
+  
     ![image](https://user-images.githubusercontent.com/10358317/209570786-e88cb620-74b6-4284-bfb9-43f385c48cdc.png)
   
 ## KATIB <a name="katib"></a>
