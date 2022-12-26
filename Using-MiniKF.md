@@ -50,7 +50,8 @@ vagrant up
   
   ![image](https://user-images.githubusercontent.com/10358317/208669809-f194eea6-3ddb-4176-922f-da689d50147f.png)
 
-- With Kubectl on the host PC, we can see the running Kubernetes Objects 
+- With Kubectl on the host PC, we can see the running Kubernetes Objects. Download "kubectl" application, add the path of "kubectl" in the environment variables. 
+- Download kubeconfig file as described below, hence it is possible to see the Kubernetes objects (pods, deployments, etc.) 
 
   ![image](https://user-images.githubusercontent.com/10358317/208669969-fe96554c-5533-4de2-993e-1b2162384c2c.png)
 
