@@ -51,6 +51,18 @@ git clone https://github.com/kubeflow-kale/kale
 
   ![image](https://user-images.githubusercontent.com/10358317/209677781-ddae3901-8253-41a8-aa98-3c7aaac12c2b.png)
   
+- When monitoring pods in K8s, it can be seen that pods are running and completed for each step.
+
+  ![image](https://user-images.githubusercontent.com/10358317/209712597-54ac29eb-5855-41f8-b29f-6e8a6c71b729.png)
+
+- For each task details can be viewed.
+  
+  ![image](https://user-images.githubusercontent.com/10358317/209713088-85cb2bda-047b-496a-8242-a8a5e84e7ebb.png)
+  
+- For each step logs and data are stored in ROK and Minio (if MiniKF is used).
+
+  ![image](https://user-images.githubusercontent.com/10358317/209713199-6c1504dc-8d5a-4f0f-90f9-5f2591950203.png)
+
 - After running pipeline, it can be seen the result parameters (accuracy)
 
   ![image](https://user-images.githubusercontent.com/10358317/209677953-75456ff8-eb11-40bf-9df8-42a019b93b96.png)
