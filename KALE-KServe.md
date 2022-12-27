@@ -67,9 +67,19 @@ git clone https://github.com/kubeflow-kale/kale
 
   ![image](https://user-images.githubusercontent.com/10358317/209677953-75456ff8-eb11-40bf-9df8-42a019b93b96.png)
 
-- KServe creates model
+- KServe creates model:
 
   ![image](https://user-images.githubusercontent.com/10358317/209678023-abcff783-49af-47dc-b9f7-0b944dcd6097.png)
+  
+- From model section, detail information can be reachable:
+
+  ![image](https://user-images.githubusercontent.com/10358317/209715143-3c7ee97f-8138-473d-867f-69dffcb7e981.png)
+
+  ![image](https://user-images.githubusercontent.com/10358317/209715204-a20f8675-ec7f-4dc9-9a61-82b82d96d618.png)
+
+  ![image](https://user-images.githubusercontent.com/10358317/209715268-12d341ef-51e9-40a9-be8e-bae3efa86284.png)
+
+  ![image](https://user-images.githubusercontent.com/10358317/209715310-02b8d854-e878-4a9f-a6e9-8a427829d518.png)
   
 - Open launcher:
 
