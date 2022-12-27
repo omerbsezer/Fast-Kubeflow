@@ -33,11 +33,6 @@ git clone https://github.com/kubeflow-kale/kale
 
   ![image](https://user-images.githubusercontent.com/10358317/209676318-60839c0e-9711-4add-8c3f-8642f76300a5.png)
   
-- For different training run, reaching served model:
-  
-  ![image](https://user-images.githubusercontent.com/10358317/209715713-91d356a8-8d85-4d87-bed9-339a7b72cb2a.png)
-
-
 - Open the KALE section from left and enable KALE
 
   ![image](https://user-images.githubusercontent.com/10358317/209570645-a1e44bf4-e10a-4846-88c5-bbf9330d1ff3.png)
@@ -118,3 +113,6 @@ curl -v http://iris-pipeline-xchh4-3630146895-2r0st.kubeflow-user.svc.cluster.lo
 
   ![image](https://user-images.githubusercontent.com/10358317/209678618-bdca8552-571c-4844-a16a-290ffd694fd5.png)
 
+- For different training run, reaching served model:
+  
+  ![image](https://user-images.githubusercontent.com/10358317/209715713-91d356a8-8d85-4d87-bed9-339a7b72cb2a.png)
