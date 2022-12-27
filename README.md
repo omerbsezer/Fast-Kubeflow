@@ -177,10 +177,10 @@ Why should we use / learn Kubeflow?
   - **Neural Architecture Search:** ENAS, DARTS
   - **Early Stopping:** Median Stop
 
-  ![image](https://user-images.githubusercontent.com/10358317/209573641-b20c09b2-3f37-4cd3-a930-c0cce45a00e4.png)
-
 - Have a look to KALE and KATIB Project:  
   - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kale-Katib-Project.md)  
+    
+    ![image](https://user-images.githubusercontent.com/10358317/209573641-b20c09b2-3f37-4cd3-a930-c0cce45a00e4.png)
 
 ## KFServe (Model Serving) <a name="kfserve"></a>
 - KServe enables serverless inferencing on Kubernetes and provides performant, high abstraction interfaces for common machine learning (ML) frameworks like TensorFlow, XGBoost, scikit-learn, PyTorch, and ONNX to solve production model serving use cases (ref: https://github.com/kserve/kserve).
@@ -206,6 +206,8 @@ Why should we use / learn Kubeflow?
 - Have a look to KALE and KATIB Project:  
   - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kale-Katib-Project.md)  
   
+    ![image](https://user-images.githubusercontent.com/10358317/209573641-b20c09b2-3f37-4cd3-a930-c0cce45a00e4.png)
+    
 ## Project 3: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction <a name="project3"></a>
 
 - Have a look to KALE and KServe Project: 
