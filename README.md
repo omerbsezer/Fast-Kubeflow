@@ -15,7 +15,7 @@ Kubeflow supposes Machine Learning (ML) Pipeline that runs on Kubernetes (K8s) C
 - [LAB: Creating LAB Environment, Installing MiniKF with Vagrant](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Using-MiniKF.md)
 - [LAB/Project: Kubeflow Pipeline (From Scratch) with Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kubeflow-Pipeline-Project.md)
 - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kale-Katib-Project.md)
-- [LAB/Project: KALE and KServe](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/KALE-KServe.md)
+- [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/KALE-KServe.md)
 
 # Table of Contents
 - [Motivation](#motivation)
@@ -28,11 +28,12 @@ Kubeflow supposes Machine Learning (ML) Pipeline that runs on Kubernetes (K8s) C
 - [Kubeflow Jupyter Notebook](#notebook)
 - [Kubeflow Pipeline](#pipeline)
 - [KALE (Kubeflow Automated PipeLines Engine)](#kale)
-- [Katib](#katib)
+- [KATIB (AutoML: Finding Best Hyperparameter Values)](#katib)
+- [KServe (Model Serving))](#kserve)
 - [Minio (Object Storage)](#minio)
-- [Project1: Creating ML Pipeline with Custom Docker Images (Decision Tree, Logistic Regression)](#project1)
-- [Project2: KALE Use Case (Titanic)](#project2)
-- [Project3: CNN Kubeflow (Mnist)](#project3)
+- [Project1: Creating ML Pipeline with Custom Docker Images  (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](#project1)
+- [Project2: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](#project2)
+- [Project3: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction](#project3)
 - [Project4: LSTM, RNN Kubeflow (NLP)](#project4)
 - [Project5: Distributed Training with TFServing](#project5)
 - [Other Useful Resources Related Kubeflow](#resource)
@@ -150,7 +151,8 @@ Why should we use / learn Kubeflow?
 
 - Have a look to Kubeflow Pipeline Project:
   - [LAB/Project: Kubeflow Pipeline (From Scratch) with Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kubeflow-Pipeline-Project.md)
-  - ![image](https://user-images.githubusercontent.com/10358317/209475619-23d23d4c-3c44-4f93-8d1b-53fb0f84bde0.png)
+    
+    ![image](https://user-images.githubusercontent.com/10358317/209475619-23d23d4c-3c44-4f93-8d1b-53fb0f84bde0.png)
   
 ## KALE (Kubeflow Automated PipeLines Engine) <a name="kale"></a>
 - KALE (Kubeflow Automated pipeLines Engine) is a project that aims at simplifying the Data Science experience of deploying Kubeflow Pipelines workflows.
@@ -165,7 +167,7 @@ Why should we use / learn Kubeflow?
   
     ![image](https://user-images.githubusercontent.com/10358317/209570786-e88cb620-74b6-4284-bfb9-43f385c48cdc.png)
   
-## KATIB <a name="katib"></a>
+## KATIB (AutoML: Finding Best Hyperparameter Values) <a name="katib"></a>
 - Katib is a Kubernetes-native project for automated machine learning (AutoML). Katib supports Hyperparameter Tuning, Early Stopping and Neural Architecture Search.
 - Katib has search methods (ref: https://github.com/kubeflow/katib): 
   - **Hyperparameter Tuning:** Random Search, Grid Search, Bayesian Optimization, TPE, Multivariate TPE, CMA-ES, Sobol's Quasirandom Sequence, HyperBand, Population Based Training.	
@@ -177,14 +179,32 @@ Why should we use / learn Kubeflow?
 - Have a look to KALE and KATIB Project:  
   - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kale-Katib-Project.md)  
 
-## KFServe <a name="kfserving"></a>
+## KFServe (Model Serving) <a name="kfserve"></a>
+- KServe enables serverless inferencing on Kubernetes and provides performant, high abstraction interfaces for common machine learning (ML) frameworks like TensorFlow, XGBoost, scikit-learn, PyTorch, and ONNX to solve production model serving use cases (ref: https://github.com/kserve/kserve).
+
+  ![image](https://user-images.githubusercontent.com/10358317/209680642-97cb6e35-ee3b-4ab6-8e18-be1b8939e757.png)
 
 - Have a look to KALE and KServe Project: 
-  - [LAB/Project: KALE and KServe](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/KALE-KServe.md)
+  - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/KALE-KServe.md)
 
 ## Minio (Object Storage) <a name="minio"></a>
 
 - [LAB: Creating LAB Environment (WSL2), Installing Kubeflow](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md) 
+
+## Project1: Creating ML Pipeline with Custom Docker Images  (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost) <a name="project1"></a>
+- Have a look to Kubeflow Pipeline Project:
+  - [LAB/Project: Kubeflow Pipeline (From Scratch) with Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kubeflow-Pipeline-Project.md)
+    
+    ![image](https://user-images.githubusercontent.com/10358317/209475619-23d23d4c-3c44-4f93-8d1b-53fb0f84bde0.png)
+  
+## Project2: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values) <a name="project2"></a>
+- Have a look to KALE and KATIB Project:  
+  - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kale-Katib-Project.md)  
+  
+## Project3: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction <a name="project3"></a>
+
+- Have a look to KALE and KServe Project: 
+  - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/KALE-KServe.md)
 
 ## Other Useful Resources Related Kubeflow <a name="resource"></a>
 
@@ -200,3 +220,4 @@ Why should we use / learn Kubeflow?
 - KALE: https://github.com/kubeflow-kale/kale
 - KATIB: https://github.com/kubeflow/katib,
 - KALE Tags: https://medium.com/kubeflow/automating-jupyter-notebook-deployments-to-kubeflow-pipelines-with-kale-a4ede38bea1f
+- KServe: https://github.com/kserve/kserve
