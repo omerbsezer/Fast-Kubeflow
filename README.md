@@ -15,6 +15,7 @@ Kubeflow supposes Machine Learning (ML) Pipeline that runs on Kubernetes (K8s) C
 - [LAB: Creating LAB Environment, Installing MiniKF with Vagrant](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Using-MiniKF.md)
 - [LAB/Project: Kubeflow Pipeline (From Scratch) with Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kubeflow-Pipeline-Project.md)
 - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kale-Katib-Project.md)
+- [LAB/Project: KALE and KServe](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/KALE-KServe.md)
 
 # Table of Contents
 - [Motivation](#motivation)
@@ -176,7 +177,10 @@ Why should we use / learn Kubeflow?
 - Have a look to KALE and KATIB Project:  
   - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kale-Katib-Project.md)  
 
-## KFServing <a name="kfserving"></a>
+## KFServe <a name="kfserving"></a>
+
+- Have a look to KALE and KServe Project: 
+  - [LAB/Project: KALE and KServe](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/KALE-KServe.md)
 
 ## Minio (Object Storage) <a name="minio"></a>
 
