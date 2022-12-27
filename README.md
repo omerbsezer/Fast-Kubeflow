@@ -108,9 +108,12 @@ Why should we use / learn Kubeflow?
 
 ## Kubeflow Basics <a name="basics"></a>
 - Kubeflow is an ML distributed application that contains following parts:
-  - Kubeflow Jupyter Notebook
+  - Kubeflow Jupyter Notebook (creating multiple notebook pods)
   - Kubeflow Pipelines
   - KALE (Kubeflow Automated PipeLines Engine)
+  - Kubeflow Runs and Experiment (which store all run and experiment)
+  - KATIB (AutoML: Finding Best Hyperparameter Values)
+  - KFServe (Model Serving)
 
 ## Kubeflow Jupyter Notebook <a name="notebook"></a>
 - Kubeflow creates Notebook using containers and K8s pod. 
