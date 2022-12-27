@@ -189,6 +189,8 @@ Why should we use / learn Kubeflow?
 
 - Have a look to KALE and KServe Project: 
   - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/KALE-KServe.md)
+  
+    ![image](https://user-images.githubusercontent.com/10358317/209678618-bdca8552-571c-4844-a16a-290ffd694fd5.png)
 
 ## Minio (Object Storage) <a name="minio"></a>
 
@@ -208,6 +210,8 @@ Why should we use / learn Kubeflow?
 
 - Have a look to KALE and KServe Project: 
   - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/KALE-KServe.md)
+  
+    ![image](https://user-images.githubusercontent.com/10358317/209678618-bdca8552-571c-4844-a16a-290ffd694fd5.png)
 
 ## Other Useful Resources Related Kubeflow <a name="resource"></a>
 
