@@ -32,6 +32,11 @@ git clone https://github.com/kubeflow-kale/kale
 - Then, after installing required packages, restart the kernel.
 
   ![image](https://user-images.githubusercontent.com/10358317/209676318-60839c0e-9711-4add-8c3f-8642f76300a5.png)
+  
+- For different training run, reaching served model:
+  
+  ![image](https://user-images.githubusercontent.com/10358317/209715713-91d356a8-8d85-4d87-bed9-339a7b72cb2a.png)
+
 
 - Open the KALE section from left and enable KALE
 
