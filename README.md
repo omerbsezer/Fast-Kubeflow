@@ -29,13 +29,13 @@ Kubeflow supposes Machine Learning (ML) Pipeline that runs on Kubernetes (K8s) C
 - [Kubeflow Pipeline](#pipeline)
 - [KALE (Kubeflow Automated PipeLines Engine)](#kale)
 - [KATIB (AutoML: Finding Best Hyperparameter Values)](#katib)
-- [KServe (Model Serving))](#kserve)
+- [KServe (Model Serving)](#kserve)
 - [Minio (Object Storage)](#minio)
-- [Project1: Creating ML Pipeline with Custom Docker Images  (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](#project1)
-- [Project2: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](#project2)
-- [Project3: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction](#project3)
-- [Project4: LSTM, RNN Kubeflow (NLP)](#project4)
-- [Project5: Distributed Training with TFServing](#project5)
+- [Project 1: Creating ML Pipeline with Custom Docker Images  (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](#project1)
+- [Project 2: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](#project2)
+- [Project 3: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction](#project3)
+- [Project 4: LSTM, RNN Kubeflow (NLP)](#project4)
+- [Project 5: Distributed Training with TFServing](#project5)
 - [Other Useful Resources Related Kubeflow](#resource)
 - [References](#references)
 
@@ -191,17 +191,17 @@ Why should we use / learn Kubeflow?
 
 - [LAB: Creating LAB Environment (WSL2), Installing Kubeflow](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md) 
 
-## Project1: Creating ML Pipeline with Custom Docker Images  (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost) <a name="project1"></a>
+## Project 1: Creating ML Pipeline with Custom Docker Images  (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost) <a name="project1"></a>
 - Have a look to Kubeflow Pipeline Project:
   - [LAB/Project: Kubeflow Pipeline (From Scratch) with Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kubeflow-Pipeline-Project.md)
     
     ![image](https://user-images.githubusercontent.com/10358317/209475619-23d23d4c-3c44-4f93-8d1b-53fb0f84bde0.png)
   
-## Project2: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values) <a name="project2"></a>
+## Project 2: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values) <a name="project2"></a>
 - Have a look to KALE and KATIB Project:  
   - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kale-Katib-Project.md)  
   
-## Project3: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction <a name="project3"></a>
+## Project 3: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction <a name="project3"></a>
 
 - Have a look to KALE and KServe Project: 
   - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/KALE-KServe.md)
