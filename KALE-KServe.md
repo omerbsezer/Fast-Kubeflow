@@ -81,6 +81,10 @@ git clone https://github.com/kubeflow-kale/kale
 
   ![image](https://user-images.githubusercontent.com/10358317/209715310-02b8d854-e878-4a9f-a6e9-8a427829d518.png)
   
+- From Experiment Section, models' results can be seen (e.g. accuracy, f1, etc.):
+
+  ![image](https://user-images.githubusercontent.com/10358317/209716410-0b7ca900-8f17-4b1f-918b-93094956f87c.png)
+  
 - Open launcher:
 
   ![image](https://user-images.githubusercontent.com/10358317/209678243-353b7271-7241-4899-bcd3-c3c58ee5de53.png)
