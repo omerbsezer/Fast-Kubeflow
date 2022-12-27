@@ -13,7 +13,7 @@ Kubeflow supposes Machine Learning (ML) Pipeline that runs on Kubernetes (K8s) C
 # Quick Look (HowTo): Scenarios - Hands-on LABs
 - [LAB: Creating LAB Environment (WSL2), Installing Kubeflow with MicroK8s, Juju on Ubuntu 20.04](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md)
 - [LAB: Creating LAB Environment, Installing MiniKF with Vagrant](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Using-MiniKF.md)
-- [LAB/Project: Kubeflow Pipeline (From Scratch) with Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kubeflow-Pipeline-Project.md)
+- [LAB/Project: Kubeflow Pipeline (From Scratch) with Kubeflow SDK (DSL Compiler) and Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kubeflow-Pipeline-Project.md)
 - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kale-Katib-Project.md)
 - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/KALE-KServe.md)
 
@@ -152,8 +152,8 @@ Why should we use / learn Kubeflow?
   - **Kubernetes Resources:** the pipeline service connects to kubernetes API in order to define the resources needed to run the pipeline defined in the YAML file.
   - **Artifact Storage:** Kubeflow Pipelines storages metadata and artifacts. Metadata such as experiments, jobs, runs and metrics are stored in a MySQL database. Artifacts such as pipeline packages, large scale metrics and views are stored in an artifact store such as MinIO server.
 
-- Have a look to Kubeflow Pipeline Project:
-  - [LAB/Project: Kubeflow Pipeline (From Scratch) with Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kubeflow-Pipeline-Project.md)
+- Have a look to Kubeflow Pipeline Project with SDK:
+  - [LAB/Project: Kubeflow Pipeline (From Scratch) with Kubeflow SDK (DSL Compiler) and Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kubeflow-Pipeline-Project.md)
     
     ![image](https://user-images.githubusercontent.com/10358317/209475619-23d23d4c-3c44-4f93-8d1b-53fb0f84bde0.png)
   
@@ -198,7 +198,7 @@ Why should we use / learn Kubeflow?
 
 ## Project 1: Creating ML Pipeline with Custom Docker Images  (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost) <a name="project1"></a>
 - Have a look to Kubeflow Pipeline Project:
-  - [LAB/Project: Kubeflow Pipeline (From Scratch) with Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kubeflow-Pipeline-Project.md)
+  - [LAB/Project: Kubeflow Pipeline (From Scratch) with Kubeflow SDK (DSL Compiler) and Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kubeflow-Pipeline-Project.md)
     
     ![image](https://user-images.githubusercontent.com/10358317/209475619-23d23d4c-3c44-4f93-8d1b-53fb0f84bde0.png)
   
