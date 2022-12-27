@@ -81,6 +81,7 @@ EOF
 ``` 
 
 - Run curl command to send JSON file to the model.
+- This "http://iris-pipeline-xchh4-3630146895-2r0st.kubeflow-user.svc.cluster.local/v1/models/iris-pipeline-xchh4-3630146895-2r0st:predict" is written in the model URL internal, please have a look in the model to get correct path.
 
 ``` 
 curl -v http://iris-pipeline-xchh4-3630146895-2r0st.kubeflow-user.svc.cluster.local/v1/models/iris-pipeline-xchh4-3630146895-2r0st:predict -d @./iris-input.json
