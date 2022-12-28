@@ -53,6 +53,7 @@ Why should we use / learn Kubeflow?
 - It includes Jupyter Notebook to develop ML algorithms, user interface to show pipeline.
 - "Kubeflow started as an open sourcing of the way Google ran TensorFlow internally, based on a pipeline called TensorFlow Extended. It began as just a simpler way to run TensorFlow jobs on Kubernetes, but has since expanded to be a multi-architecture, multi-cloud framework for running entire machine learning pipelines." (ref: [kubeflow.org](https://v0-7.kubeflow.org/docs/)) 
 - **Kubeflow applies to become a CNCF incubating project**, it is announced on 24 October 2022 (ref: [opensource.googleblog.com](https://opensource.googleblog.com/2022/10/kubeflow-applies-to-become-a-cncf-incubating-project.html)).
+- Distributed training become more important day by day, because the number of the parameters is increasing (especially deep learning models: **billions to trillion parameters**). Increasing parameter provides better results but it also causes the longer training and it needs more computing power. **With Kubeflow, Kubernetes and containers, distributed learning is achieved with many GPUs**. Please have look [Training-Operators (Distributed Training)](#operator) part for details.
 
 ## What is Kubelow <a name="whatIsKubeflow"></a>
 - "The Kubeflow project is dedicated to making deployments of machine learning (ML) workflows on Kubernetes simple, portable and scalable." (ref: kubeflow.org) 
@@ -208,7 +209,7 @@ Why should we use / learn Kubeflow?
   - Microsoft's **Megatron-Turing** language model has **530 billion** parameters (ref: https://www.technologyreview.com/2021/12/08/1041557/deepmind-language-model-beat-others-25-times-size-gpt-3-megatron/)
   - DeepMind built a large language model called **Gopher**, with **280 billion** parameters.
 
-- CERN uses Kubeflow and Training operators to speed up the training (3D-GAN) on parallel multiple GPUs (1 single training time: 2.5 days = 60 hours to 30 minutes):
+- CERN uses Kubeflow and Training operators to speed up the training (3D-GAN) on parallel multiple GPUs (1 single training time: From 2.5 days = **60 hours** to **30 minutes**):
   - Video: https://www.youtube.com/watch?v=HuWt1N8NFzU
   - One of their Presentation: https://indico.cern.ch/event/924283/contributions/4105328/attachments/2153724/3632143/2020-12-01-Kubeflow-FastML.pdf
 
