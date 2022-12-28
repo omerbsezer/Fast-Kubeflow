@@ -1,7 +1,7 @@
-## LAB / PROJECT: Distributed Training with Tensorflow
+## LAB / PROJECT: Distributed Training with Tensorflow (MNIST data)
 
 This lab/project shows:
-- how to run distributed training on MiniKF (CPU) with Tensorflow.
+- how to run distributed training (MNIST Data) on MiniKF (CPU) with Tensorflow.
 - all files used in this LAB: https://github.com/omerbsezer/Fast-Kubeflow/tree/main/Project_Distributed_Training_Tensorflow
 - other examples with PyTorch, Tensorflow, MXNet, XGBoost (some of them requires GPU): 
   - https://github.com/kubeflow/training-operator/tree/master/examples
