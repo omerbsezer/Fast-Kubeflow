@@ -223,8 +223,13 @@ Why should we use / learn Kubeflow?
   
 ## Minio and ROK (Object Storages) <a name="minio"></a>
 
-- [LAB: Creating LAB Environment (WSL2), Installing Kubeflow](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md) 
+- Minio is object storage (like AWS S3, Azure Blob Storage), but it also works on-premise, Kubeflow uses minio to save Kubeflow object data. To get more info and printscreen of the Minio, please have a look below:
+  - [LAB: Creating LAB Environment (WSL2), Installing Kubeflow](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md)
+  - Min.io: https://min.io/
 
+- ROK is data management platform on Kubernetes that is developed by Arrikto. In the MiniKF, ROK makes easy to use K8s data management (e.g. automatically managed PV, storage classes)  
+  - More info, please have a look: https://www.arrikto.com/rok-data-management-platform/
+  
 ## Project 1: Creating ML Pipeline with Custom Docker Images  (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost) <a name="project1"></a>
 - Have a look it:
   - [LAB/Project: Kubeflow Pipeline (From Scratch) with Kubeflow SDK (DSL Compiler) and Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kubeflow-Pipeline-Project.md)
