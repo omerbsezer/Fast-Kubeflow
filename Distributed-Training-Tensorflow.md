@@ -343,13 +343,15 @@ kubectl apply -f tf_job_mnist.yaml
 
   ![image](https://user-images.githubusercontent.com/10358317/209823947-70eb35bd-0c2d-4e0f-a0dd-be9820d4c4d3.png)
   
-- After training, logs can be viewed in the completed TFJobs:
-
-  ```
-  kubectl logs dist-mnist-worker-0
-  ```
+- After training, worker node is not deleted because of the TFJob:
 
   ![image](https://user-images.githubusercontent.com/10358317/209828119-a7173672-877c-4042-b1aa-0cc0771ad70f.png)
+
+- After training, logs can be viewed with following command:
+
+```
+kubectl logs dist-mnist-worker-0
+```  
 
   ![image](https://user-images.githubusercontent.com/10358317/209827934-c43c1793-f4d0-428c-ace8-ac3a02af0c19.png)
 
