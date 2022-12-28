@@ -1,7 +1,7 @@
 # Fast-Kubeflow
 This repo covers Kubeflow Environment with LABs: Kubeflow GUI, Jupyter Notebooks running on Kubernetes Pod, Kubeflow Pipeline, KALE (Kubeflow Automated PipeLines Engine), KATIB (AutoML: Finding Best Hyperparameter Values), KFServe (Model Serving), Training Operators (Distributed Training), Projects, etc. Possible usage scenarios are aimed to update over time.
 
-Kubeflow is powerful tool that runs on Kubernetes (K8s) with containers (process isolation, scaling, distributed and parallel training). Kubeflow can be installed on-premise (WSL2 or MiniKF), and Cloud (AWS, Azure, GCP). 
+Kubeflow is powerful tool that runs on Kubernetes (K8s) with containers (process isolation, scaling, distributed and parallel training). Kubeflow can be installed on-premise (WSL2 or MiniKF), and Cloud (AWS, Azure, GCP; ref: https://www.kubeflow.org/docs/started/installing-kubeflow/)
 
 **This repo makes easy to learn and apply projects on your local machine with MiniKF, Virtualbox 6.1.40 and Vagrant without any FEE** (Min: 16GB RAM, 6 CPU cores, 70-80 GB Disk space).
 
@@ -14,7 +14,7 @@ Kubeflow is powerful tool that runs on Kubernetes (K8s) with containers (process
 
 # Quick Look (HowTo): Scenarios - Hands-on LABs
 - [LAB: Creating LAB Environment (WSL2), Installing Kubeflow with MicroK8s, Juju on Ubuntu 20.04](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md)
-- [LAB: Creating LAB Environment, Installing MiniKF with Vagrant](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Using-MiniKF.md)
+- [LAB: Creating LAB Environment, Installing MiniKF with Vagrant (Preffered for Easy Usage)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Using-MiniKF.md)
 - [LAB/Project: Kubeflow Pipeline (From Scratch) with Kubeflow SDK (DSL Compiler) and Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kubeflow-Pipeline-Project.md)
 - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kale-Katib-Project.md)
 - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/KALE-KServe.md)
