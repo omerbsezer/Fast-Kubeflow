@@ -2,8 +2,9 @@
 
 This lab/project shows:
 - how to run distributed training on MiniKF (CPU) with Tensorflow.
-- all files used in this LAB: 
-- other examples (some of them requires GPU): https://github.com/kubeflow/training-operator/tree/master/examples
+- all files used in this LAB: https://github.com/omerbsezer/Fast-Kubeflow/tree/main/Project_Distributed_Training_Tensorflow
+- other examples with PyTorch, Tensorflow, MXNet, XGBoost (some of them requires GPU): 
+  - https://github.com/kubeflow/training-operator/tree/master/examples
 
 ### Prerequisite
 
@@ -341,6 +342,12 @@ kubectl apply -f tf_job_mnist.yaml
   ![image](https://user-images.githubusercontent.com/10358317/209821528-77da59f6-2c0b-4cd8-bf56-1f5216a752ad.png)
 
   ![image](https://user-images.githubusercontent.com/10358317/209823947-70eb35bd-0c2d-4e0f-a0dd-be9820d4c4d3.png)
+  
+- After training, logs can be viewed:
+
+```
+kubectl get logs dist-mnist-worker-0
+```
 
 ### Refecerences
 
