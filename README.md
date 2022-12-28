@@ -34,7 +34,7 @@ Kubeflow is powerful tool that runs on Kubernetes (K8s) with containers (process
 - [KATIB (AutoML: Finding Best Hyperparameter Values)](#katib)
 - [KServe (Model Serving)](#kserve)
 - [Training-Operators (Distributed Training)](#operator)
-- [Minio and ROK (Object Storages)](#minio)
+- [Minio (Object Storage) and ROK (Data Management Platform)](#minio_rok)
 - [Project 1: Creating ML Pipeline with Custom Docker Images  (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](#project1)
 - [Project 2: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](#project2)
 - [Project 3: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction](#project3)
@@ -221,7 +221,7 @@ Why should we use / learn Kubeflow?
   
     ![image](https://user-images.githubusercontent.com/10358317/209821528-77da59f6-2c0b-4cd8-bf56-1f5216a752ad.png)
   
-## Minio and ROK (Object Storages) <a name="minio"></a>
+## Minio (Object Storage) and ROK (Data Management Platform) <a name="minio_rok"></a>
 
 - Minio is object storage (like AWS S3, Azure Blob Storage), but it also works on-premise, Kubeflow uses minio to save Kubeflow object data. To get more info and printscreen of the Minio, please have a look below:
   - [LAB: Creating LAB Environment (WSL2), Installing Kubeflow](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md)
