@@ -1,5 +1,5 @@
 # Fast-Kubeflow
-This repo covers Kubeflow Environment with LABs: Kubeflow, Pipeline, Experiments, Run, Minio, etc. Possible usage scenarios are aimed to update over time.
+This repo covers Kubeflow Environment with LABs: Kubeflow GUI, Jupyter Notebooks running on Kubernetes Pod, Kubeflow Pipeline, KALE (Kubeflow Automated PipeLines Engine), KATIB (AutoML: Finding Best Hyperparameter Values), KFServe (Model Serving), Training Operators (Distributed Training), Projects, etc. Possible usage scenarios are aimed to update over time.
 
 Kubeflow supposes Machine Learning (ML) Pipeline that runs on Kubernetes (K8s) Cluster. Kubeflow uses the power of the K8s (Clusters and Autoscaling). Each step of the process in the ML Pipeline is container. Hence, each step can be isolated, run parallel (if they are not in sequence). 
 
@@ -8,7 +8,7 @@ Kubeflow supposes Machine Learning (ML) Pipeline that runs on Kubernetes (K8s) C
   - Container Technology (Docker). You can learn it from here => [Fast-Docker](https://github.com/omerbsezer/Fast-Docker)
   - Container Orchestration Technology (Kubernetes). You can learn it from here => [Fast-Kubernetes](https://github.com/omerbsezer/Fast-Kubernetes)
   
-**Keywords:** Kubeflow, ML Pipeline, MLOps, AIOps
+**Keywords:** Kubeflow, Pipeline, MLOps, AIOps, Distributed Training, Model Serving, ML Containers
 
 # Quick Look (HowTo): Scenarios - Hands-on LABs
 - [LAB: Creating LAB Environment (WSL2), Installing Kubeflow with MicroK8s, Juju on Ubuntu 20.04](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md)
