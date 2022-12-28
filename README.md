@@ -16,6 +16,7 @@ Kubeflow supposes Machine Learning (ML) Pipeline that runs on Kubernetes (K8s) C
 - [LAB/Project: Kubeflow Pipeline (From Scratch) with Kubeflow SDK (DSL Compiler) and Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kubeflow-Pipeline-Project.md)
 - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kale-Katib-Project.md)
 - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/KALE-KServe.md)
+- [LAB/Project: Distributed Training with Tensorflow (MNIST data)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Distributed-Training-Tensorflow.md)
 
 # Table of Contents
 - [Motivation](#motivation)
@@ -154,7 +155,7 @@ Why should we use / learn Kubeflow?
   - **Kubernetes Resources:** the pipeline service connects to kubernetes API in order to define the resources needed to run the pipeline defined in the YAML file.
   - **Artifact Storage:** Kubeflow Pipelines storages metadata and artifacts. Metadata such as experiments, jobs, runs and metrics are stored in a MySQL database. Artifacts such as pipeline packages, large scale metrics and views are stored in an artifact store such as MinIO server.
 
-- Have a look to Kubeflow Pipeline Project with SDK:
+- Have a look it:
   - [LAB/Project: Kubeflow Pipeline (From Scratch) with Kubeflow SDK (DSL Compiler) and Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kubeflow-Pipeline-Project.md)
     
     ![image](https://user-images.githubusercontent.com/10358317/209475619-23d23d4c-3c44-4f93-8d1b-53fb0f84bde0.png)
@@ -179,7 +180,7 @@ Why should we use / learn Kubeflow?
   - **Neural Architecture Search:** ENAS, DARTS
   - **Early Stopping:** Median Stop
 
-- Have a look to KALE and KATIB Project:  
+- Have a look it:
   - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kale-Katib-Project.md)  
     
     ![image](https://user-images.githubusercontent.com/10358317/209573641-b20c09b2-3f37-4cd3-a930-c0cce45a00e4.png)
@@ -189,7 +190,7 @@ Why should we use / learn Kubeflow?
 
   ![image](https://user-images.githubusercontent.com/10358317/209680642-97cb6e35-ee3b-4ab6-8e18-be1b8939e757.png)
 
-- Have a look to KALE and KServe Project: 
+- Have a look it:
   - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/KALE-KServe.md)
   
     ![image](https://user-images.githubusercontent.com/10358317/209678618-bdca8552-571c-4844-a16a-290ffd694fd5.png)
@@ -213,31 +214,42 @@ Why should we use / learn Kubeflow?
   - Video: https://www.youtube.com/watch?v=HuWt1N8NFzU
   - One of their Presentation: https://indico.cern.ch/event/924283/contributions/4105328/attachments/2153724/3632143/2020-12-01-Kubeflow-FastML.pdf
 
+- Have a look it:
+  - [LAB/Project: Distributed Training with Tensorflow (MNIST data)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Distributed-Training-Tensorflow.md)
+  
 ## Minio and ROK (Object Storages) <a name="minio"></a>
 
 - [LAB: Creating LAB Environment (WSL2), Installing Kubeflow](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md) 
 
 ## Project 1: Creating ML Pipeline with Custom Docker Images  (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost) <a name="project1"></a>
-- Have a look to Kubeflow Pipeline Project:
+- Have a look it:
   - [LAB/Project: Kubeflow Pipeline (From Scratch) with Kubeflow SDK (DSL Compiler) and Custom Docker Images (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kubeflow-Pipeline-Project.md)
     
     ![image](https://user-images.githubusercontent.com/10358317/209475619-23d23d4c-3c44-4f93-8d1b-53fb0f84bde0.png)
   
 ## Project 2: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values) <a name="project2"></a>
-- Have a look to KALE and KATIB Project:  
+- Have a look it: 
   - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Kale-Katib-Project.md)  
   
     ![image](https://user-images.githubusercontent.com/10358317/209573641-b20c09b2-3f37-4cd3-a930-c0cce45a00e4.png)
     
 ## Project 3: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction <a name="project3"></a>
 
-- Have a look to KALE and KServe Project: 
+- Have a look it:
   - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/KALE-KServe.md)
   
     ![image](https://user-images.githubusercontent.com/10358317/209715713-91d356a8-8d85-4d87-bed9-339a7b72cb2a.png)
 
+## Project 4: Distributed Training with Tensorflow (MNIST data) <a name="project4"></a>
+
+- Have a look it:
+  - [LAB/Project: Distributed Training with Tensorflow (MNIST data)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Distributed-Training-Tensorflow.md)
+
 ## Other Useful Resources Related Kubeflow <a name="resource"></a>
 
+- https://www.kubeflow.org/
+- https://www.kubeflow.org/docs/components/central-dash/overview/
+- https://github.com/kubeflow/
 
 ## References <a name="references"></a>
 - kubeflow.org: (kubeflow documentation) https://v0-7.kubeflow.org/docs/
