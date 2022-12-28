@@ -217,6 +217,8 @@ Why should we use / learn Kubeflow?
 - Have a look it:
   - [LAB/Project: Distributed Training with Tensorflow (MNIST data)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Distributed-Training-Tensorflow.md)
   
+    ![image](https://user-images.githubusercontent.com/10358317/209821528-77da59f6-2c0b-4cd8-bf56-1f5216a752ad.png)
+  
 ## Minio and ROK (Object Storages) <a name="minio"></a>
 
 - [LAB: Creating LAB Environment (WSL2), Installing Kubeflow](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md) 
@@ -245,6 +247,8 @@ Why should we use / learn Kubeflow?
 - Have a look it:
   - [LAB/Project: Distributed Training with Tensorflow (MNIST data)](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Distributed-Training-Tensorflow.md)
 
+    ![image](https://user-images.githubusercontent.com/10358317/209821528-77da59f6-2c0b-4cd8-bf56-1f5216a752ad.png)
+    
 ## Other Useful Resources Related Kubeflow <a name="resource"></a>
 
 - https://www.kubeflow.org/
