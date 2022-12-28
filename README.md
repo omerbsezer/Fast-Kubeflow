@@ -30,12 +30,12 @@ Kubeflow supposes Machine Learning (ML) Pipeline that runs on Kubernetes (K8s) C
 - [KALE (Kubeflow Automated PipeLines Engine)](#kale)
 - [KATIB (AutoML: Finding Best Hyperparameter Values)](#katib)
 - [KServe (Model Serving)](#kserve)
-- [Minio (Object Storage)](#minio)
+- [Training-Operators (Distributed Training)](#operator)
+- [Minio and ROK (Object Storages)](#minio)
 - [Project 1: Creating ML Pipeline with Custom Docker Images  (Decision Tree, Logistic Regression, SVM, Naive Bayes, Xg Boost)](#project1)
 - [Project 2: KALE (Kubeflow Automated PipeLines Engine) and KATIB (AutoML: Finding Best Hyperparameter Values)](#project2)
 - [Project 3: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction](#project3)
-- [Project 4: LSTM, RNN Kubeflow (NLP)](#project4)
-- [Project 5: Distributed Training with TFServing](#project5)
+- [Project 4: Distributed Training with Training Operator](#project4)
 - [Other Useful Resources Related Kubeflow](#resource)
 - [References](#references)
 
@@ -114,6 +114,7 @@ Why should we use / learn Kubeflow?
   - Kubeflow Runs and Experiment (which store all run and experiment)
   - KATIB (AutoML: Finding Best Hyperparameter Values)
   - KFServe (Model Serving)
+  - Training-Operators (Distributed Training)
 
 ## Kubeflow Jupyter Notebook <a name="notebook"></a>
 - Kubeflow creates Notebook using containers and K8s pod. 
@@ -191,8 +192,24 @@ Why should we use / learn Kubeflow?
   - [LAB/Project: KALE (Kubeflow Automated PipeLines Engine) and KServe (Model Serving) for Model Prediction](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/KALE-KServe.md)
   
     ![image](https://user-images.githubusercontent.com/10358317/209678618-bdca8552-571c-4844-a16a-290ffd694fd5.png)
+    
+## Training-Operators (Distributed Training) <a name="operator"></a>
+- It is great advantage to run **distributed and parallel** jobs (training) on Kubernetes with Training-Operators. User can determine the number of worker trainer pods. 
+- Training operator provides Kubernetes custom resources that makes it easy to run distributed or non-distributed TensorFlow / PyTorch / Apache MXNet / XGBoost / MPI jobs on Kubernetes (ref: https://github.com/kubeflow/training-operator).
+- Distributed Training become more important day by day, because the number of the parameters is increasing (especially deep learning, deep neural networks). Increasing parameter provides better results but it also causes the longer training and it needs more computing power. +
+  - How is the number of the parameters calculated? (https://stackoverflow.com/questions/28232235/how-to-calculate-the-number-of-parameters-of-convolutional-neural-networks) 
+  - VGG has 138 Million parameters. 
+  - OpenAI ChatGPT (GPT 3.5) has 175 billion parameters (ref: https://www.sciencefocus.com/future-technology/gpt-3/)
+  - The Chinese tech giant Huawei built a 200-billion-parameter language model called PanGu (ref: https://www.technologyreview.com/2021/12/21/1042835/2021-was-the-year-of-monster-ai-models/)
+  - Inspur, another Chinese firm, built Yuan 1.0, a 245-billion-parameter model
+  - Baidu and Peng Cheng Laboratory, a research institute in Shenzhen, announced PCL-BAIDU Wenxin, a model with 280 billion parameters that Baidu is already using in a variety of applications, including internet search, news feeds, and smart speakers. And the Beijing Academy of AI announced Wu Dao 2.0, which has 1.75 trillion parameters. 
+  - South Korean internet search firm Naver announced a model called HyperCLOVA, with 204 billion parameters.
 
-## Minio (Object Storage) <a name="minio"></a>
+- CERN uses Kubeflow and Training operators to speed up the training (3D-GAN) on parallel multiple GPUs (1 single training time: 2.5 days  )
+  - Video: https://www.youtube.com/watch?v=HuWt1N8NFzU
+  - One of the Presentation: https://indico.cern.ch/event/924283/contributions/4105328/attachments/2153724/3632143/2020-12-01-Kubeflow-FastML.pdf
+
+## Minio and ROK (Object Storages) <a name="minio"></a>
 
 - [LAB: Creating LAB Environment (WSL2), Installing Kubeflow](https://github.com/omerbsezer/Fast-Kubeflow/blob/main/Installing-Kubeflow.md) 
 
@@ -230,3 +247,4 @@ Why should we use / learn Kubeflow?
 - KATIB: https://github.com/kubeflow/katib,
 - KALE Tags: https://medium.com/kubeflow/automating-jupyter-notebook-deployments-to-kubeflow-pipelines-with-kale-a4ede38bea1f
 - KServe: https://github.com/kserve/kserve
+- https://www.technologyreview.com/2021/12/21/1042835/2021-was-the-year-of-monster-ai-models/
