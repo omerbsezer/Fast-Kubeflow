@@ -345,17 +345,16 @@ kubectl apply -f tf_job_mnist.yaml
   
 - After training, logs can be viewed in the completed TFJobs:
 
+  ```
+  kubectl logs dist-mnist-worker-0
+  ```
+
   ![image](https://user-images.githubusercontent.com/10358317/209828119-a7173672-877c-4042-b1aa-0cc0771ad70f.png)
-
-
-```
-kubectl logs dist-mnist-worker-0
-```
 
   ![image](https://user-images.githubusercontent.com/10358317/209827934-c43c1793-f4d0-428c-ace8-ac3a02af0c19.png)
 
 
-### Refecerences
+### References
 
 - https://github.com/kubeflow/training-operator/tree/master/examples/tensorflow/dist-mnist
 - https://dzlab.github.io/ml/2020/07/18/kubeflow-training/
