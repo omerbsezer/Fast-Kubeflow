@@ -43,17 +43,17 @@ Kubeflow supposes Machine Learning (ML) Pipeline that runs on Kubernetes (K8s) C
 
 Why should we use / learn Kubeflow? 
 
-- Kubeflow uses containers to run steps of ML algorithms on PC cluster.
-- Kubeflow supports parallel training (with Tensorflow).
+- Kubeflow uses containers anh Kubernetes to run steps of Machine Learning and Deep Learning algorithms on the computer clusters.
 - Kubeflow provides Machine Learning (ML) data pipeline.
-- It saves pipelines, experiments, and runs (experiment tracking on Kubeflow). 
+- It saves pipelines, experiments, runs (experiment tracking on Kubeflow), models (model deployment). 
 - It provides easy, repeatable, portable deployments on a diverse infrastructure (for example, experimenting on a laptop, then moving to an on-premises cluster or to the cloud).
 - Kubeflow provides deploying and managing loosely-coupled microservices and scaling based on demand.
-- Kubeflow is free, open source platform that runs on on-premise or any cloud (AWS, Google Cloud, Azure).
+- Kubeflow is free, open source platform that runs on on-premise or any cloud (AWS, Google Cloud, Azure, etc.).
 - It includes Jupyter Notebook to develop ML algorithms, user interface to show pipeline.
 - "Kubeflow started as an open sourcing of the way Google ran TensorFlow internally, based on a pipeline called TensorFlow Extended. It began as just a simpler way to run TensorFlow jobs on Kubernetes, but has since expanded to be a multi-architecture, multi-cloud framework for running entire machine learning pipelines." (ref: [kubeflow.org](https://v0-7.kubeflow.org/docs/)) 
 - **Kubeflow applies to become a CNCF incubating project**, it is announced on 24 October 2022 (ref: [opensource.googleblog.com](https://opensource.googleblog.com/2022/10/kubeflow-applies-to-become-a-cncf-incubating-project.html)).
-- Distributed training become more important day by day, because the number of the parameters is increasing (especially deep learning models: **billions to trillion parameters**). Increasing parameter provides better results but it also causes the longer training and it needs more computing power. **With Kubeflow, Kubernetes and containers, distributed learning is achieved with many GPUs**. Please have look [Training-Operators (Distributed Training)](#operator) part for details.
+- **Distributed and Parallel** training become more important day by day, because the number of the parameters is increasing (especially deep learning models: **billions to trillion parameters**). Increasing parameter provides better results but it also causes the longer training and it needs more computing power. **With Kubeflow, Kubernetes and containers, distributed learning is achieved with many GPUs**. Please have look [Training-Operators (Distributed Training)](#operator) part for details.
+- CERN uses **Kubeflow and Training operators** to speed up the training (3D-GAN) on parallel multiple GPUs (1 single training time: From 2.5 days = **60 hours** to **30 minutes**, video/presentation: https://www.youtube.com/watch?v=HuWt1N8NFzU)
 
 ## What is Kubelow <a name="whatIsKubeflow"></a>
 - "The Kubeflow project is dedicated to making deployments of machine learning (ML) workflows on Kubernetes simple, portable and scalable." (ref: kubeflow.org) 
@@ -252,3 +252,6 @@ Why should we use / learn Kubeflow?
 - KALE Tags: https://medium.com/kubeflow/automating-jupyter-notebook-deployments-to-kubeflow-pipelines-with-kale-a4ede38bea1f
 - KServe: https://github.com/kserve/kserve
 - https://www.technologyreview.com/2021/12/21/1042835/2021-was-the-year-of-monster-ai-models/
+- https://www.technologyreview.com/2021/12/08/1041557/deepmind-language-model-beat-others-25-times-size-gpt-3-megatron/
+- https://indico.cern.ch/event/924283/contributions/4105328/attachments/2153724/3632143/2020-12-01-Kubeflow-FastML.pdf
+- CERN Distributed Training Video: https://www.youtube.com/watch?v=HuWt1N8NFzU
