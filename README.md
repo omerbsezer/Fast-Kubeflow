@@ -198,13 +198,15 @@ Why should we use / learn Kubeflow?
 - Training operator provides Kubernetes custom resources that makes it easy to run distributed or non-distributed TensorFlow / PyTorch / Apache MXNet / XGBoost / MPI jobs on Kubernetes (ref: https://github.com/kubeflow/training-operator).
 - Distributed Training become more important day by day, because the number of the parameters is increasing (especially deep learning, deep neural networks). Increasing parameter provides better results but it also causes the longer training and it needs more computing power. 
   - How is the number of the parameters calculated? => https://stackoverflow.com/questions/28232235/how-to-calculate-the-number-of-parameters-of-convolutional-neural-networks
-  - Common DL models parameters: VGG => 138 Million, AlexNet => 62 Million, ResNet-152: 60.3 Million. 
-  - OpenAI ChatGPT (GPT 3.5) has 175 billion parameters (ref: https://www.sciencefocus.com/future-technology/gpt-3/).
-  - The Chinese tech giant Huawei built a 200-Billion-parameter language model called PanGu (ref: https://www.technologyreview.com/2021/12/21/1042835/2021-was-the-year-of-monster-ai-models/).
-  - Inspur, another Chinese firm, built Yuan 1.0, a 245-billion-parameter model.
-  - Baidu and Peng Cheng Laboratory, a research institute in Shenzhen, announced PCL-BAIDU Wenxin, a model with 280 billion parameters. 
-  - The Beijing Academy of AI announced Wu Dao 2.0, which has 1.75 trillion parameters. 
-  - South Korean internet search firm Naver announced a model called HyperCLOVA, with 204 billion parameters.
+  - Common DL models parameters: **VGG => 138 Million, AlexNet => 62 Million, ResNet-152: 60.3 Million**. 
+  - OpenAI **ChatGPT (GPT-3.5)** and GPT-3 have **175 billion** parameters (ref: https://www.sciencefocus.com/future-technology/gpt-3/).
+  - The Chinese tech giant Huawei built a **200-billion-parameter** language model called **PanGu** (ref: https://www.technologyreview.com/2021/12/21/1042835/2021-was-the-year-of-monster-ai-models/).
+  - Inspur, another Chinese firm, built **Yuan 1.0**, a **245-billion-parameter** model.
+  - Baidu and Peng Cheng Laboratory, a research institute in Shenzhen, announced **PCL-BAIDU Wenxin**, a model with **280 billion** parameters. 
+  - The Beijing Academy of AI announced **Wu Dao 2.0**, which has **1.75 trillion** parameters. 
+  - South Korean internet search firm Naver announced a model called **HyperCLOVA**, with **204 billion** parameters.
+  - Microsoft's **Megatron-Turing** language model has **530 billion** parameters (ref: https://www.technologyreview.com/2021/12/08/1041557/deepmind-language-model-beat-others-25-times-size-gpt-3-megatron/)
+  - DeepMind built a large language model called **Gopher**, with **280 billion** parameters.
 
 - CERN uses Kubeflow and Training operators to speed up the training (3D-GAN) on parallel multiple GPUs (1 single training time: 2.5 days = 60 hours to 30 minutes):
   - Video: https://www.youtube.com/watch?v=HuWt1N8NFzU
