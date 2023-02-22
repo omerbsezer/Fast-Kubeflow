@@ -46,7 +46,7 @@ Kubeflow is powerful tool that runs on Kubernetes (K8s) with containers (process
 
 Why should we use / learn Kubeflow? 
 
-- Kubeflow uses containers anh Kubernetes to run steps of Machine Learning and Deep Learning algorithms on the computer clusters.
+- Kubeflow uses containers on Kubernetes to run steps of Machine Learning and Deep Learning algorithms on the computer clusters.
 - Kubeflow provides Machine Learning (ML) data pipeline.
 - It saves pipelines, experiments, runs (experiment tracking on Kubeflow), models (model deployment). 
 - It provides easy, repeatable, portable deployments on a diverse infrastructure (for example, experimenting on a laptop, then moving to an on-premises cluster or to the cloud).
