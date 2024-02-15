@@ -91,8 +91,7 @@ Why should we use / learn Kubeflow?
 
   ![image](https://user-images.githubusercontent.com/10358317/113183210-0db7f580-9254-11eb-9716-0de635f3cbdf.png) (Ref: docs.docker.com)
   
-- **To learn about Docker and Containers, please go to this repo:** https://github.com/omerbsezer/Fast-Docker
-  - [Fast-Docker](https://github.com/omerbsezer/Fast-Docker/blob/main/README.md#motivation)
+- **To learn about Docker and Containers, please go to this repo:** [Fast-Docker](https://github.com/omerbsezer/Fast-Docker/blob/main/README.md#motivation)
 
 
 ## What is Kubernetes? <a name="whatisKubeflow"></a>
