@@ -27,6 +27,7 @@ exec sudo nsenter -t $(pidof systemd) -a su - $LOGNAME
 - Install MicroK8s:
 
 ```
+sudo snap install microk8s --classic
 microk8s status
 sudo usermod -a -G microk8s $USER
 sudo chown -f -R $USER ~/.kube
